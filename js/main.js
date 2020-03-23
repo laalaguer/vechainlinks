@@ -31,10 +31,10 @@ function buildItemElement(item, colorClass) {
                         <span class="badge badge-pill badge-light">${item.platform}</span> ${item.editor_languages}
                     </div>
                     <p class="card-text mb-auto">${item.editor_comments}</p>
-                    <a href="${item.url}">Continue reading</a>
+                    <a href="${item.url}" target="_blank">Continue reading</a>
                 </div>
                 <div class="col-auto d-none d-lg-block">
-                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">${item.editor_title}</text></svg>
                 </div>
             </div>
         </div>`

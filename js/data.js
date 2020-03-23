@@ -212,7 +212,7 @@ items = [
         "organization": false,
         "platform_identifier": "abyteahead",
         "personal_account": true,
-        "editor_title": "A Abyte Ahead",
+        "editor_title": "A Byte Ahead",
         "editor_comments": "This guy writes about VeChain tutorials and tech news.",
         "editor_languages": ["english"]
     },
