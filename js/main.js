@@ -3,7 +3,9 @@ function colorClass (index) {
         "text-primary",
         "text-success",
         "text-info",
+        "text-secondary",
         "text-danger",
+        "text-warning",
         "text-dark"
     ]
     return classes[index % classes.length]
