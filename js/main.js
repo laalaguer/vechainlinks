@@ -27,9 +27,7 @@ function buildItemElement(item, colorClass) {
                 <div class="col p-4 d-flex flex-column position-static">
                     <strong class="d-inline-block mb-2 ${colorClass} text-capitalize">${item.category}</strong>
                     <h3 class="mb-0">${item.editor_title}</h3>
-                    <div class="mb-1 text-muted text-capitalize">
-                        <span class="badge badge-pill badge-light">${item.platform}</span> ${item.editor_languages}
-                    </div>
+                    <div class="mb-1 text-muted text-capitalize">${item.platform}</div>
                     <p class="card-text mb-auto">${item.editor_comments}</p>
                     <a href="${item.url}" target="_blank">Continue reading</a>
                 </div>
@@ -43,9 +41,9 @@ function buildItemElement(item, colorClass) {
 }
 
 function buildContainer(items, categoryName) {
-    const categoryArray = []
+    const categoryNameArray = []
     for (let key in categories) {
-        categoryArray.push(key)
+        categoryNameArray.push(key)
     }
 
     const container = $(`<main role="main" class="container" id="${categoryName}"></main>`)
@@ -61,7 +59,7 @@ function buildContainer(items, categoryName) {
 
     const list = []
     matchedItems.forEach(item => {
-        list.push(buildItemElement(item, colorClass(categoryArray.indexOf(item.category))))
+        list.push(buildItemElement(item, colorClass(categoryNameArray.indexOf(item.category))))
     });
 
     list.forEach(item => {

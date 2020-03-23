@@ -15,7 +15,7 @@ categories = {
         description: "Join the daily discussions"
     },
     "docs": {
-        description: "Where to find coding helps"
+        description: "Code and Libraries"
     },
     "code": {
         description: "Open source projects"
@@ -31,7 +31,7 @@ items = [
         "organization": true,
         "platform_identifier": "vechainofficial",
         "personal_account": false,
-        "editor_comments": "VeChain foundation official account, updates once there are news on Vechain.",
+        "editor_comments": "Official account, updates once there are business news on Vechain.",
         "editor_title": "VeChain Medium",
         "editor_languages": ["english"]
     },
@@ -43,7 +43,7 @@ items = [
         "organization": true,
         "platform_identifier": "vechainofficial",
         "personal_account": false,
-        "editor_comments": "VeChain Twitter",
+        "editor_comments": "Official account on Twitter.",
         "editor_title": "VeChain Twitter",
         "editor_languages": ["english"]
     },
@@ -55,7 +55,7 @@ items = [
         "organization": true,
         "platform_identifier": "vechaindev",
         "personal_account": false,
-        "editor_comments": "VeChain Dev Twitter",
+        "editor_comments": "Developer related news, updates new technology advancements, tutorials, and milestone releases.",
         "editor_title": "VeChainDev Twitter",
         "editor_languages": ["english"]
     },
@@ -69,7 +69,7 @@ items = [
         "platform_identifier": "6353774918",
         "personal_account": false,
         "editor_title": "VeChain Weibo",
-        "editor_comments": "The VeChain Foundation channel on Weibo",
+        "editor_comments": "The VeChain Foundation channel on Weibo in Chinese language.",
         "editor_languages": ["chinese"]
     },
     {
@@ -81,7 +81,7 @@ items = [
         "platform_identifier": "6306565418",
         "personal_account": false,
         "editor_title": "VeChain Fans Weibo",
-        "editor_comments": "VeChain Fans on Weibo",
+        "editor_comments": "VeChain Fans on Weibo, in Chinese language.",
         "editor_languages": ["chinese"]
     },
     {
@@ -93,7 +93,7 @@ items = [
         "platform_identifier": "VeChainStats Twitter",
         "personal_account": false,
         "editor_title": "Vechainstats",
-        "editor_comments": "The VeChain Statistics all-in-one",
+        "editor_comments": "Announcements of vechainstats.com, a powerful community block explorer made by Fabian.",
         "editor_languages": ["english"]
     },
     {
@@ -117,7 +117,7 @@ items = [
         "platform_identifier": "vechainthorscan",
         "personal_account": false,
         "editor_title": "VechainThorScan",
-        "editor_comments": "Community VeChain explorer with an elegant UI.",
+        "editor_comments": "Announcements of a community VeChain explorer with an elegant UI.",
         "editor_languages": ["english"]
     },
     {
@@ -129,7 +129,7 @@ items = [
         "platform_identifier": "sunshinelu24",
         "personal_account": true,
         "editor_title": "Sunny",
-        "editor_comments": "The CEO of VeChain",
+        "editor_comments": "The CEO of VeChain.",
         "editor_languages": ["english"]
     },
     {
@@ -141,7 +141,7 @@ items = [
         "platform_identifier": "kfeng027",
         "personal_account": true,
         "editor_title": "Kevin",
-        "editor_comments": "The COO of VeChain",
+        "editor_comments": "The COO of VeChain.",
         "editor_languages": ["english"]
     },
     {
@@ -153,7 +153,7 @@ items = [
         "platform_identifier": "BenYorke",
         "personal_account": true,
         "editor_title": "Ben Yorke",
-        "editor_comments": "Ben York, VeChain101's editor, blockchain enthusiast",
+        "editor_comments": "Ben York, VeChain101's editor, blockchain enthusiast.",
         "editor_languages": ["english"]
     },
     {
@@ -165,7 +165,7 @@ items = [
         "platform_identifier": "qian_bin_cola_t",
         "personal_account": true,
         "editor_title": "Qian Bin",
-        "editor_comments": "The core dev of VeChainThor Blockchain",
+        "editor_comments": "The core dev of VeChainThor Blockchain.",
         "editor_languages": ["english"]
     },
     {
@@ -177,7 +177,7 @@ items = [
         "platform_identifier": "liboliqi",
         "personal_account": true,
         "editor_title": "Tony",
-        "editor_comments": "The core dev of VeChainThor Blockchain",
+        "editor_comments": "The core dev of VeChainThor Blockchain.",
         "editor_languages": ["english"]
     },
     {
@@ -201,7 +201,7 @@ items = [
         "platform_identifier": "PeterZh47977516",
         "personal_account": true,
         "editor_title": "Dr. Peter Zhou",
-        "editor_comments": "VeChain Scientist",
+        "editor_comments": "VeChain Scientist.",
         "editor_languages": ["english"]
     },
     {
@@ -213,7 +213,7 @@ items = [
         "platform_identifier": "abyteahead",
         "personal_account": true,
         "editor_title": "A Byte Ahead",
-        "editor_comments": "This guy writes about VeChain tutorials and tech news.",
+        "editor_comments": "He writes VeChain tutorials and apps.",
         "editor_languages": ["english"]
     },
     
@@ -226,32 +226,7 @@ items = [
         "platform_identifier": "Vechain",
         "personal_account": false,
         "editor_title": "VeChain Reddit",
-        "editor_comments": "The VeChain Foundation channel on Reddit",
-        "editor_languages": ["english"]
-    },
-    
-    {
-        "url": "http://vestats.com/",
-        "category": "tools",
-        "platform": "website",
-        "run_by_official": false,
-        "organization": true,
-        "platform_identifier": null,
-        "personal_account": false,
-        "editor_title": "Vechainstats.com",
-        "editor_comments": "Community VeChain explorer tracking your accounts.",
-        "editor_languages": ["english", "chinese", ""]
-    },
-    {
-        "url": "https://vechainthorscan.com/",
-        "category": "tools",
-        "platform": "website",
-        "run_by_official": false,
-        "organization": true,
-        "platform_identifier": null,
-        "personal_account": false,
-        "editor_title": "Vechainthorscan",
-        "editor_comments": "Community VeChain explorer with an elegant UI.",
+        "editor_comments": "General discussion channel on Reddit.",
         "editor_languages": ["english"]
     },
     {
@@ -264,6 +239,30 @@ items = [
         "personal_account": false,
         "editor_title": "VeChain Explorer",
         "editor_comments": "Fast and reliable VeChain official explorer.",
+        "editor_languages": ["english"]
+    },
+    {
+        "url": "http://vestats.com/",
+        "category": "tools",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "VechainStats",
+        "editor_comments": "Community VeChain explorer with rich functionalities.",
+        "editor_languages": ["english", "chinese", ""]
+    },
+    {
+        "url": "https://vechainthorscan.com/",
+        "category": "tools",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "VechainThorScan",
+        "editor_comments": "Community VeChain explorer with an elegant UI.",
         "editor_languages": ["english"]
     },
     {
@@ -286,8 +285,8 @@ items = [
         "organization": true,
         "platform_identifier": "VeChainDevCommunity",
         "personal_account": false,
-        "editor_title": "Developer Chat",
-        "editor_comments": "Mosty devs' chat on coding.",
+        "editor_title": "Developers' Chat",
+        "editor_comments": "Huge community developers' chat on coding. Go make some friends there!",
         "editor_languages": ["english"]
     },
     {
@@ -298,8 +297,8 @@ items = [
         "organization": true,
         "platform_identifier": "vechain_official_CN",
         "personal_account": false,
-        "editor_title": "Chinese Chat",
-        "editor_comments": "Traders, announcements and price",
+        "editor_title": "Chinese Telegram",
+        "editor_comments": "Traders, announcements and price discussions in Chinese.",
         "editor_languages": ["chinese"]
     },
     {
@@ -310,8 +309,8 @@ items = [
         "organization": true,
         "platform_identifier": "vechain_official_en",
         "personal_account": false,
-        "editor_title": "English Chat",
-        "editor_comments": "Traders, announcements and price",
+        "editor_title": "English Telegram",
+        "editor_comments": "Traders, announcements and price discussions in English.",
         "editor_languages": ["english"]
     },
     {
@@ -323,7 +322,7 @@ items = [
         "platform_identifier": "vechainthorscan",
         "personal_account": false,
         "editor_title": "Vechainthorscan Devs",
-        "editor_comments": "Developers discuss on vechainthorscan.com",
+        "editor_comments": "Developers' discussion, bug fix, feature request of vechainthorscan.com",
         "editor_languages": ["english"]
     },
     {
@@ -335,7 +334,7 @@ items = [
         "platform_identifier": "vechainwallet",
         "personal_account": false,
         "editor_title": "Community Browser Extension",
-        "editor_comments": "Developers discuss on topic of Chrome browser extension.",
+        "editor_comments": "Discussion of a newly made Chrome browser wallet extension.",
         "editor_languages": ["english"]
     },
     {
@@ -359,7 +358,31 @@ items = [
         "platform_identifier": "vechain",
         "personal_account": false,
         "editor_title": "Thor Devkit",
-        "editor_comments": "Thor JavaScript SDK.",
+        "editor_comments": "JavaScript SDK library. Wallets generation, transactions assembling.",
+        "editor_languages": ["english"]
+    },
+    {
+        "url": "https://github.com/vechain/token-registry",
+        "category": "code",
+        "platform": "github",
+        "run_by_official": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "Token Registry",
+        "editor_comments": "Tokens reside on VeChain. You can submit one by pull request.",
+        "editor_languages": ["english"]
+    },
+    {
+        "url": "https://github.com/vechain/app-hub",
+        "category": "code",
+        "platform": "github",
+        "run_by_official": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "App Hub",
+        "editor_comments": "3rd party dApps appears in Sync. You can submit one by pull request.",
         "editor_languages": ["english"]
     },
     {
@@ -371,7 +394,7 @@ items = [
         "platform_identifier": null,
         "personal_account": false,
         "editor_title": "iPhone Wallet",
-        "editor_comments": "Mobile wallet to transfer funds, view dApps.",
+        "editor_comments": "Official mobile wallet to transfer funds, view dApps.",
         "editor_languages": ["english", "chinese"]
     },
     {
@@ -383,7 +406,7 @@ items = [
         "platform_identifier": null,
         "personal_account": false,
         "editor_title": "Android Wallet",
-        "editor_comments": "Mobile wallet to transfer funds, view dApps.",
+        "editor_comments": "Official mobile wallet to transfer funds, view dApps.",
         "editor_languages": ["english", "chinese"]
     },
     {
@@ -443,7 +466,7 @@ items = [
         "platform_identifier": null,
         "personal_account": false,
         "editor_title": "Documentation Center",
-        "editor_comments": "Developer resource for documentations and tutorials.",
+        "editor_comments": "Developer resources for docs, tutorials and knowledge.",
         "editor_languages": ["english"]
     },
     {
@@ -455,7 +478,31 @@ items = [
         "platform_identifier": null,
         "personal_account": false,
         "editor_title": "Connex",
-        "editor_comments": "Connex API documentations.",
+        "editor_comments": "Connex API documentation. The standard way to connect to VeChain network.",
+        "editor_languages": ["english"]
+    },
+    {
+        "url": "https://github.com/vechain/vips/",
+        "category": "docs",
+        "platform": "github",
+        "run_by_official": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "VIPs",
+        "editor_comments": "\"VeChain Improvement Proposals\", where new milestones are planned and discussed.",
+        "editor_languages": ["english"]
+    },
+    {
+        "url": "https://medium.com/@abyteahead/",
+        "category": "docs",
+        "platform": "medium",
+        "run_by_official": false,
+        "organization": false,
+        "platform_identifier": "abyteahead",
+        "personal_account": true,
+        "editor_title": "A Byte Ahead Medium",
+        "editor_comments": "Tutorials on building apps on VeChain. Explains new features and how-to.",
         "editor_languages": ["english"]
     },
     {
@@ -466,8 +513,8 @@ items = [
         "organization": true,
         "platform_identifier": null,
         "personal_account": false,
-        "editor_title": "VeChain Discussion Forum",
-        "editor_comments": "Announcements, discussions and new developments",
+        "editor_title": "Discussion Forum",
+        "editor_comments": "Announcements, AMA sessions and new developments.",
         "editor_languages": ["english", "chinese"]
     },
     {
@@ -479,7 +526,7 @@ items = [
         "platform_identifier": null,
         "personal_account": false,
         "editor_title": "VeChain Grant",
-        "editor_comments": "Grants to support small start-ups on VeChain",
+        "editor_comments": "Grants to support small start-ups on VeChain.",
         "editor_languages": ["english"]
     },
     {
@@ -503,7 +550,7 @@ items = [
         "platform_identifier": null,
         "personal_account": false,
         "editor_title": "Dapps Category",
-        "editor_comments": "Interesting apps running on VeChain Blockchain.",
+        "editor_comments": "Interesting 3rd party apps running on VeChain Blockchain.",
         "editor_languages": ["english"]
     },
     {
