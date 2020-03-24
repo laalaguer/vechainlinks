@@ -871,7 +871,33 @@ items = [
         "platform_identifier": null,
         "personal_account": false,
         "editor_title": "Picasso",
-        "editor_comments": "General purpose deterministic identity icon library in svg format, mostly for vechain thor addresses.",
+        "editor_comments": "General purpose icon library in svg format, for VechainThor wallet addresses.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
+        "url": "https://github.com/vechain/wallet-Android-sdk",
+        "category": "code",
+        "platform": "github",
+        "run_by_official": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "Android SDK",
+        "editor_comments": "Interact with VeChain, create and manage wallets, compatible with Connex standard.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
+        "url": "https://github.com/vechain/wallet-iOS-sdk",
+        "category": "code",
+        "platform": "github",
+        "run_by_official": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "iOS SDK",
+        "editor_comments": "Interact with VeChain, create and manage wallets, compatible with Connex standard.",
         "editor_languages": ["english"],
         "job_status":null
     },
@@ -884,7 +910,7 @@ items = [
         "platform_identifier": null,
         "personal_account": false,
         "editor_title": "B32",
-        "editor_comments": "Signature collection of smart contract method & event.",
+        "editor_comments": "Signature collection of smart contracts method & events deployed on VeChain.",
         "editor_languages": ["english"],
         "job_status":null
     }
