@@ -677,7 +677,7 @@ items = [
         "platform_identifier": null,
         "personal_account": false,
         "editor_title": "VeChain.org",
-        "editor_comments": "Official website of the VeChain foundation. Includes bounty/grant information and technology advancements.",
+        "editor_comments": "Official website of the VeChain foundation. Includes bounty information and technology advancements.",
         "editor_languages": ["english", "chinese"],
         "job_status":null
     },
