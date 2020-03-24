@@ -279,19 +279,6 @@ items = [
         "job_status":"vechain_team"     
     },
     {
-        "url": "https://twitter.com/abyteahead",
-        "category": "people",
-        "platform": "twitter",
-        "run_by_official": false,
-        "organization": false,
-        "platform_identifier": "abyteahead",
-        "personal_account": true,
-        "editor_title": "A Byte Ahead",
-        "editor_comments": "Core dev and the writer of VeChain tutorials and apps.",
-        "editor_languages": ["english"],
-        "job_status":"vechain_team"
-    },
-    {
         "url": "https://twitter.com/MiRei83_",
         "category": "people",
         "platform": "twitter",
@@ -317,7 +304,19 @@ items = [
         "editor_languages": ["english"],
         "job_status":"third_party"
     },
-    
+    {
+        "url": "https://twitter.com/abyteahead",
+        "category": "people",
+        "platform": "twitter",
+        "run_by_official": false,
+        "organization": false,
+        "platform_identifier": "abyteahead",
+        "personal_account": true,
+        "editor_title": "A Byte Ahead",
+        "editor_comments": "VeChain Core dev and the writer of tutorials and apps.",
+        "editor_languages": ["english"],
+        "job_status":"vechain_team"
+    },
     {
         "url": "https://www.reddit.com/r/Vechain/",
         "category": "chats",
