@@ -519,7 +519,7 @@ items = [
         "job_status":null
     },
     {
-        "url": "https://github.com/vechain/thor-sync.electron",
+        "url": "env.vechain.org",
         "category": "tools",
         "platform": "desktop",
         "run_by_official": true,
@@ -558,7 +558,7 @@ items = [
         "job_status":null
     },
     {
-        "url": "https://connex.vecha.in/#/",
+        "url": "https://docs.vechain.org/connex/intro.html",
         "category": "docs",
         "platform": "website",
         "run_by_official": true,
@@ -672,6 +672,58 @@ items = [
         "editor_title": "VeChain.org",
         "editor_comments": "Official website of the VeChain foundation. Includes bounty/grant information and technology advancements.",
         "editor_languages": ["english", "chinese"],
+        "job_status":null
+    },
+    {
+        "url": "https://insight.vecha.in",
+        "category": "tools",
+        "platform": "website",
+        "run_by_official": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "VeChain.org",
+        "editor_comments": "A serverless VeChain explorer. It allows you to explore and search for blocks, transactions and accounts.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
+        "url": "https://faucet.vecha.in/",
+        "category": "tools",
+        "platform": "website",
+        "run_by_official": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "VeChain.org",
+        "editor_comments": "Provides VET and VTHO on testnet freely. It is designed to help developers test applications as well as provide users an alternative to experience dApps on the VeChainThor blockchain.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
+        "url": "https://github.com/vechain/picasso",
+        "category": "tools",
+        "platform": "github",
+        "run_by_official": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "VeChain.org",
+        "editor_comments": "General purpose deterministic identity icon library in svg format, mostly for vechain thor addresses.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
+        "url": "https://github.com/vechain/b32",
+        "category": "tools",
+        "platform": "github",
+        "run_by_official": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "VeChain.org",
+        "editor_comments": "Signature collection of smart contract method & event.",
+        "editor_languages": ["english"],
         "job_status":null
     }
 ]
