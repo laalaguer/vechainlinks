@@ -20,7 +20,7 @@ categories = {
         description: "Join the discussions"
     },
     "docs": {
-        display: "Documentations",
+        display: "Docs",
         description: "Code and Libraries"
     },
     "code": {
@@ -102,10 +102,23 @@ items = [
         "platform": "twitter",
         "run_by_official": false,
         "organization": true,
-        "platform_identifier": "VeChainStats Twitter",
+        "platform_identifier": "VeChainStats",
         "personal_account": false,
         "editor_title": "Vechainstats",
         "editor_comments": "Updates from VeChainStats.com, a powerful community block explorer and analytics tool.",
+        "editor_languages": ["english"],
+        "job_status": null
+    },
+    {
+        "url": "https://twitter.com/VechainThorCom",
+        "category": "media",
+        "platform": "twitter",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": "VechainThorCom",
+        "personal_account": false,
+        "editor_title": "VechainThorCom",
+        "editor_comments": "Community Twitter of VeChain.",
         "editor_languages": ["english"],
         "job_status": null
     },
@@ -132,6 +145,19 @@ items = [
         "personal_account": false,
         "editor_title": "VechainThorScan",
         "editor_comments": "Updates from a community VeChain explorer with an elegant UI.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
+        "url": "https://twitter.com/FreshSupplyCoAu",
+        "category": "media",
+        "platform": "twitter",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": "FreshSupplyCoAu",
+        "personal_account": false,
+        "editor_title": "Fresh Supply Co.",
+        "editor_comments": "Food Company that offers provenance/traceability for ag exports. freshsupplyco.com",
         "editor_languages": ["english"],
         "job_status":null
     },
@@ -305,6 +331,19 @@ items = [
         "job_status":"third_party"
     },
     {
+        "url": "https://twitter.com/d_inderias",
+        "category": "people",
+        "platform": "twitter",
+        "run_by_official": false,
+        "organization": false,
+        "platform_identifier": "d_inderias",
+        "personal_account": true,
+        "editor_title": "David Inderias",
+        "editor_comments": "CEO of freshsupplyco.com",
+        "editor_languages": ["english"],
+        "job_status":"third_party"
+    },
+    {
         "url": "https://twitter.com/abyteahead",
         "category": "people",
         "platform": "twitter",
@@ -339,7 +378,7 @@ items = [
         "platform_identifier": null,
         "personal_account": false,
         "editor_title": "VeChain Explorer",
-        "editor_comments": "Fast and reliable VeChain official block explorer.",
+        "editor_comments": "Fast and reliable official block explorer.",
         "editor_languages": ["english"],
         "job_status":null
     },
