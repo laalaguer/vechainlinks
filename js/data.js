@@ -218,6 +218,19 @@ items = [
         "job_status": "vechain_team"
     },
     {
+        "url": "https://twitter.com/jeromegrilleres",
+        "category": "people",
+        "platform": "twitter",
+        "run_by_vechain": false,
+        "organization": false,
+        "platform_identifier": "jeromegrilleres",
+        "personal_account": true,
+        "editor_title": "Jérôme Grillères",
+        "editor_comments": "VeChain EU office GM.",
+        "editor_languages": ["english"],
+        "job_status": "vechain_team"
+    },
+    {
         "url": "https://twitter.com/liboliqi",
         "category": "people",
         "platform": "twitter",
@@ -374,6 +387,19 @@ items = [
         "job_status": null
     },
     {
+        "url": "env.vechain.org",
+        "category": "tools",
+        "platform": "desktop",
+        "run_by_vechain": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "VeChain Sync",
+        "editor_comments": "Transfer funds, view dApps and manage wallets on Mac, Windows, Linux. Supports Ledger Nano S and X.",
+        "editor_languages": ["english"],
+        "job_status": null
+    },
+    {
         "url": "https://explore.vechain.org/",
         "category": "tools",
         "platform": "website",
@@ -408,7 +434,7 @@ items = [
         "platform_identifier": null,
         "personal_account": false,
         "editor_title": "VeBlocks.net",
-        "editor_comments": "Community mainnet activity monitor",
+        "editor_comments": "Community mainnet activity monitor.",
         "editor_languages": ["english"],
         "job_status": null
     },
@@ -421,7 +447,7 @@ items = [
         "platform_identifier": null,
         "personal_account": false,
         "editor_title": "Wallü",
-        "editor_comments": "Wallet management and monitoring tool",
+        "editor_comments": "Wallet management and monitoring tool.",
         "editor_languages": ["english"],
         "job_status": null
     },
@@ -628,7 +654,7 @@ items = [
         "organization": true,
         "platform_identifier": null,
         "personal_account": false,
-        "editor_title": "iPhone Wallet",
+        "editor_title": "Wallet for iOS",
         "editor_comments": "Official mobile wallet and dApp browser.",
         "editor_languages": ["english", "chinese"],
         "job_status": null
@@ -641,7 +667,7 @@ items = [
         "organization": true,
         "platform_identifier": null,
         "personal_account": false,
-        "editor_title": "Android Wallet",
+        "editor_title": "Wallet for Android",
         "editor_comments": "Official mobile wallet and dApp browser.",
         "editor_languages": ["english", "chinese"],
         "job_status": null
@@ -673,19 +699,6 @@ items = [
         "job_status": null
     },
     {
-        "url": "env.vechain.org",
-        "category": "tools",
-        "platform": "desktop",
-        "run_by_vechain": true,
-        "organization": true,
-        "platform_identifier": null,
-        "personal_account": false,
-        "editor_title": "VeChain Sync",
-        "editor_comments": "Desktop wallet to transfer funds, view dApps. (Mac, Windows, Linux)",
-        "editor_languages": ["english"],
-        "job_status": null
-    },
-    {
         "url": "https://manager.vechainstats.com",
         "category": "tools",
         "platform": "desktop",
@@ -707,7 +720,7 @@ items = [
         "platform_identifier": null,
         "personal_account": false,
         "editor_title": "Price Checker Extension",
-        "editor_comments": "Browser extension to view price quickly.  (Chrome, Firefox)",
+        "editor_comments": "Browser extension to view price quickly on Chrome and Firefox.",
         "editor_languages": ["english", "chinese"],
         "job_status": null
     },
@@ -721,6 +734,45 @@ items = [
         "personal_account": false,
         "editor_title": "Vexchange",
         "editor_comments": "Decentralized exchange powered by smart contracts.",
+        "editor_languages": ["english"],
+        "job_status": null
+    },
+    {
+        "url": "https://laalaguer.github.io/VeChain-Address/",
+        "category": "tools",
+        "platform": "desktop",
+        "run_by_vechain": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "VeChain Address Generator",
+        "editor_comments": "Simple paper wallet generator on in your browser. For testing purpose only.",
+        "editor_languages": ["english", "chinese"],
+        "job_status": null
+    },
+    {
+        "url": "https://laalaguer.github.io/vechain-token-transfer/",
+        "category": "tools",
+        "platform": "desktop",
+        "run_by_vechain": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "VeChain Tokens",
+        "editor_comments": "Supports more than 10+ tokens on VeChain. Allows batch transfer with CSV file.",
+        "editor_languages": ["english", "chinese"],
+        "job_status": null
+    },
+    {
+        "url": "https://tokens.vecha.in/#/wallets",
+        "category": "tools",
+        "platform": "desktop",
+        "run_by_vechain": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "My Tokens",
+        "editor_comments": "Transfer of tokens made easy.",
         "editor_languages": ["english"],
         "job_status": null
     },
