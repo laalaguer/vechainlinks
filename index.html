@@ -17,6 +17,16 @@
           -ms-user-select: none;
           user-select: none;
         }
+
+        .border-bottom-thick {
+          line-height: 1;
+          border-bottom: 3px solid #000000;
+        }
+
+        .border-bottom-light {
+          line-height: 1;
+          border-bottom: 1px solid #e5e5e5;
+        }
   
         @media (min-width: 768px) {
           .bd-placeholder-img-lg {
@@ -33,7 +43,7 @@
   <body>
     <div class="container" id="my-body">
       <!-- Navbar -->
-      <header class="blog-header py-3">
+      <header class="py-3 border-bottom-thick">
         <div class="row flex-nowrap justify-content-between align-items-center">
           <div class="col-4 pt-1">
             <a class="btn btn-sm btn-outline-secondary" href="#">Subscribe News Letter</a>
@@ -51,7 +61,7 @@
       </header>
 
       <!-- Category line -->
-      <div class="nav-scroller py-1 mb-2" >
+      <div class="nav-scroller py-1 mb-2 border-bottom-light" >
         <nav class="nav d-flex justify-content-between" id="category-section">
         </nav>
       </div>
