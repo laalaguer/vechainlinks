@@ -318,7 +318,7 @@ items = [
         "job_status":null
     },
     {
-        "url": "http://vestats.com/",
+        "url": "http://vechainstats.com/",
         "category": "tools",
         "platform": "website",
         "run_by_official": false,
@@ -327,6 +327,45 @@ items = [
         "personal_account": false,
         "editor_title": "VechainStats",
         "editor_comments": "Community VeChain explorer with rich functionalities.",
+        "editor_languages": ["english", "chinese", ""],
+        "job_status":null
+    },
+    {
+        "url": "https://visuals.veblocks.net",
+        "category": "tools",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "VeBlocks.net",
+        "editor_comments": "Community mainnet activity monitor",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
+        "url": "https://wallu.vechainstats.com",
+        "category": "tools",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "Wallü",
+        "editor_comments": "Wallet management and monitoring tool",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
+        "url": "https://www.vexplorer.io",
+        "category": "tools",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "Vexplorer",
+        "editor_comments": "Community VeChain block explorer.",
         "editor_languages": ["english", "chinese", ""],
         "job_status":null
     },
@@ -538,6 +577,19 @@ items = [
         "editor_languages": ["english"],
         "job_status":null
     },
+      {
+        "url": "https://manager.vechainstats.com",
+        "category": "tools",
+        "platform": "mobile",
+        "run_by_official": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "Node Manager",
+        "editor_comments": "A third party node manager from the makers of VeChainStats.com",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
     {
         "url": "https://chrome.google.com/webstore/detail/vechain-price-checker/ojopeinoooepnfnmifmmjebccpnjamea",
         "category": "tools",
@@ -628,6 +680,18 @@ items = [
         "editor_comments": "Grants to support small start-ups on VeChain.",
         "editor_languages": ["english"],
         "job_status":null
+    },  {
+        "url": "http://www.vechainuniverse.com",
+        "category": "website",
+        "platform": "website",
+        "run_by_official": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "VeChain Universe",
+        "editor_comments": "Mainnet activity visualizer with firework display.",
+        "editor_languages": ["english"],
+        "job_status":null
     },
     {
         "url": "https://www.vechain.org/bounty-program/",
@@ -691,6 +755,19 @@ items = [
         "personal_account": false,
         "editor_title": "Insight",
         "editor_comments": "A serverless light-weight VeChain explorer. Search for blocks, transactions and accounts.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+        {
+        "url": "https://www.play2048x.com",
+        "category": "tools",
+        "platform": "website",
+        "run_by_official": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "2048",
+        "editor_comments": "A classic mobile game that uses VET/VTHO as a jackpot reward.",
         "editor_languages": ["english"],
         "job_status":null
     },
