@@ -689,7 +689,7 @@ items = [
         "organization": true,
         "platform_identifier": null,
         "personal_account": false,
-        "editor_title": "VeChain.org",
+        "editor_title": "Insight",
         "editor_comments": "A serverless VeChain explorer. It allows you to explore and search for blocks, transactions and accounts.",
         "editor_languages": ["english"],
         "job_status":null
@@ -702,7 +702,7 @@ items = [
         "organization": true,
         "platform_identifier": null,
         "personal_account": false,
-        "editor_title": "VeChain.org",
+        "editor_title": "Faucet",
         "editor_comments": "Provides VET and VTHO on testnet freely. It is designed to help developers test applications as well as provide users an alternative to experience dApps on the VeChainThor blockchain.",
         "editor_languages": ["english"],
         "job_status":null
@@ -715,7 +715,7 @@ items = [
         "organization": true,
         "platform_identifier": null,
         "personal_account": false,
-        "editor_title": "VeChain.org",
+        "editor_title": "Picasso",
         "editor_comments": "General purpose deterministic identity icon library in svg format, mostly for vechain thor addresses.",
         "editor_languages": ["english"],
         "job_status":null
@@ -728,7 +728,7 @@ items = [
         "organization": true,
         "platform_identifier": null,
         "personal_account": false,
-        "editor_title": "VeChain.org",
+        "editor_title": "B32",
         "editor_comments": "Signature collection of smart contract method & event.",
         "editor_languages": ["english"],
         "job_status":null
