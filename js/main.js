@@ -11,6 +11,22 @@ function colorClass (index) {
     return classes[index % classes.length]
 }
 
+function brandColor (name) {
+    const info = {
+        "medium": '#00ab6c',
+        "twitter": '#1da1f2',
+        "weibo": '#DA291C',
+        "reddit": '#ff4500',
+        "website": '#737373',
+        "telegram": '#0088cc',
+        "github": '#24292e',
+        "mobile": '#a4c639',
+        "desktop": '#0078d7'
+    }
+    
+    return (info[name.toLowerCase()] || 'black')
+}
+
 function buildNavBarElements (categories) {
     var elements = []
     for (let key in categories) {
@@ -25,11 +41,10 @@ function buildItemElement(item, colorClass) {
         `<div class="col-md-4">
             <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="col-12 p-4 d-flex flex-column position-static">
-                    <strong class="d-inline-block mb-2 ${colorClass} text-capitalize">${item.category}</strong>
-                    <h3 class="mb-0">${item.editor_title}</h3>
-                    <div class="mb-1 text-muted text-capitalize">${item.platform}</div>
+                    <strong class="d-inline-block mb-2 text-capitalize" style="color: ${brandColor(item.platform)}">${item.platform}</strong>
+                    <h3 class="mb-1">${item.editor_title}</h3>
                     <p class="card-text mb-auto">${item.editor_comments}</p>
-                    <a href="${item.url}" target="_blank">Continue reading <span class="badge badge-pill badge-primary">99+</span></a>
+                    <a href="${item.url}" target="_blank">Continue reading</a>
                 </div>
             </div>
         </div>`

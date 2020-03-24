@@ -11,8 +11,8 @@ Links to:
 - Official Sites: 
 - Standalone Media/Tools Sites:
 - Telegram Channels:
-- Codes: VeChain Organization
-- Tools: Desktop, iOS, Android
+- Codes: VeChain OrganizationiOS, Android
+- Tools: Desktop, 
 - Dapps URLs, Dapps Githubs, perosnal projects
 
 ## Step Two: Build a Dynamic Website
