@@ -274,7 +274,7 @@ items = [
         "platform_identifier": "abyteahead",
         "personal_account": true,
         "editor_title": "A Byte Ahead",
-        "editor_comments": "Writer of VeChain tutorials and apps.",
+        "editor_comments": "Core dev and the writer of VeChain tutorials and apps.",
         "editor_languages": ["english"],
         "job_status":"vechain_team"
     },
@@ -580,7 +580,7 @@ items = [
       {
         "url": "https://manager.vechainstats.com",
         "category": "tools",
-        "platform": "mobile",
+        "platform": "desktop",
         "run_by_official": true,
         "organization": true,
         "platform_identifier": null,

@@ -15,6 +15,16 @@ function brandColor (name) {
     return (info[name.toLowerCase()] || 'black')
 }
 
+// Get jobStatus from key
+function jobStatusName(key) {
+    const info = {
+        "vechain_team": "VeChain Staff",
+        "community_member": "Community Member",
+        "third_party": "Third Party"
+    }
+    return (info[key.toLowerCase()] || null)
+}
+
 function buildNavBarElements (categories) {
     var elements = []
     for (let key in categories) {
@@ -25,11 +35,16 @@ function buildNavBarElements (categories) {
 }
 
 function buildItemElement(item) {
-    const outside = $('<div class="col-md-4"></div>')
+    const outside = $('<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12"></div>')
     const cardBox = $('<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"></div>')
     const cardBody = $('<div class="col-12 p-4 d-flex flex-column position-static"></div>')
     const topColorText = $(`<strong class="d-inline-block mb-2 text-capitalize" style="color: ${brandColor(item.platform)}">${item.platform}</strong>`)
-    const cardTitle = $(`<h3 class="mb-1">${item.editor_title}</h3>`)
+    var cardTitle;
+    if (item.job_status !== null ) {
+        cardTitle = $(`<h3 class="mb-1">${item.editor_title}</h3><div class="mb-1 text-muted">${jobStatusName(item.job_status)}</div>`)
+    } else {
+        cardTitle = $(`<h3 class="mb-1">${item.editor_title}</h3><div class="mb-1 text-muted">`)
+    }
     const cardDescribe = $(`<p class="card-text mb-auto">${item.editor_comments}</p>`)
     const cardLink = $(`<a href="${item.url}" target="_blank">Continue reading</a>`)
     
@@ -72,7 +87,7 @@ function buildContainer(items, categoryKey, categoryDetail) {
 }
 
 $(document).ready(function(){
-
+    console.log(items.length)
     // Stuff the Nav Bar.
     const navBarElements = buildNavBarElements(categories)
     $("#category-section").html(navBarElements)
