@@ -25,6 +25,44 @@ function jobStatusName(key) {
     return (info[key.toLowerCase()] || null)
 }
 
+// Compare two items.
+function compareItems(itemA, itemB) {
+    // if has official mark
+    if (itemA["run_by_vechain"] || itemB["run_by_vechain"]) {
+        // both official.
+        if (itemA["run_by_vechain"] && itemB["run_by_vechain"]) {
+            return 0
+        }
+        // Only A is official
+        if (itemA["run_by_vechain"]) {
+            return -1
+        }
+        // Only B is official
+        if (itemB["run_by_vechain"]) {
+            return 1
+        }
+    }
+
+    // if has staff mark
+    if (itemA["job_status"] == "vechain_team" || itemB["job_status"] == "vechain_team") {
+        // both staff
+        if (itemA["job_status"] == "vechain_team" && itemB["job_status"] == "vechain_team") {
+            return 0
+        }
+        // only A is staff
+        if (itemA["job_status"] == "vechain_team") {
+            return -1
+        }
+        // only B is staff
+        if (itemB["job_status"] == "vechain_team") {
+            return 1
+        }
+    }
+
+    // cannot compare, leave it equal.
+    return 0
+}
+
 function buildNavBarElements (categories) {
     var elements = []
     for (let key in categories) {
@@ -71,6 +109,8 @@ function buildContainer(items, categoryKey, categoryDetail) {
             matchedItems.push(item)
         }
     })
+
+    matchedItems.sort(compareItems)
 
     const cardElementList = []
     matchedItems.forEach(item => {
