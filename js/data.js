@@ -129,7 +129,7 @@ items = [
         "platform_identifier": "sunshinelu24",
         "personal_account": true,
         "editor_title": "Sunny",
-        "editor_comments": "The CEO of VeChain.",
+        "editor_comments": "CEO of VeChain.",
         "editor_languages": ["english"]
     },
     {
@@ -141,7 +141,19 @@ items = [
         "platform_identifier": "kfeng027",
         "personal_account": true,
         "editor_title": "Kevin",
-        "editor_comments": "The COO of VeChain.",
+        "editor_comments": "COO of VeChain.",
+        "editor_languages": ["english"]
+    },
+    {
+        "url": "https://twitter.com/qian_bin_cola_t",
+        "category": "people",
+        "platform": "twitter",
+        "run_by_official": false,
+        "organization": false,
+        "platform_identifier": "qian_bin_cola_t",
+        "personal_account": true,
+        "editor_title": "Qian Bin",
+        "editor_comments": "Core dev of VeChainThor Blockchain.",
         "editor_languages": ["english"]
     },
     {
@@ -157,18 +169,6 @@ items = [
         "editor_languages": ["english"]
     },
     {
-        "url": "https://twitter.com/qian_bin_cola_t",
-        "category": "people",
-        "platform": "twitter",
-        "run_by_official": false,
-        "organization": false,
-        "platform_identifier": "qian_bin_cola_t",
-        "personal_account": true,
-        "editor_title": "Qian Bin",
-        "editor_comments": "The core dev of VeChainThor Blockchain.",
-        "editor_languages": ["english"]
-    },
-    {
         "url": "https://twitter.com/liboliqi",
         "category": "people",
         "platform": "twitter",
@@ -177,7 +177,7 @@ items = [
         "platform_identifier": "liboliqi",
         "personal_account": true,
         "editor_title": "Tony",
-        "editor_comments": "The core dev of VeChainThor Blockchain.",
+        "editor_comments": "Core dev of VeChainThor Blockchain.",
         "editor_languages": ["english"]
     },
     {
@@ -189,7 +189,7 @@ items = [
         "platform_identifier": "tahpot",
         "personal_account": true,
         "editor_title": "Chris",
-        "editor_comments": "Founder of Verida",
+        "editor_comments": "Founder of Verida.",
         "editor_languages": ["english"]
     },
     {
@@ -417,7 +417,7 @@ items = [
         "organization": true,
         "platform_identifier": null,
         "personal_account": false,
-        "editor_title": "VeChain Pro (iOS)",
+        "editor_title": "VeChain Pro iOS",
         "editor_comments": "Client-side ToolChain Scanner.",
         "editor_languages": ["english", "chinese"]
     },
@@ -429,7 +429,7 @@ items = [
         "organization": true,
         "platform_identifier": null,
         "personal_account": false,
-        "editor_title": "VeChain Pro (Android)",
+        "editor_title": "VeChain Pro Android",
         "editor_comments": "Client-side ToolChain Scanner.",
         "editor_languages": ["english", "chinese"]
     },
@@ -550,7 +550,7 @@ items = [
         "platform_identifier": null,
         "personal_account": false,
         "editor_title": "Dapps Category",
-        "editor_comments": "Interesting 3rd party apps running on VeChain Blockchain.",
+        "editor_comments": "Find interesting 3rd party apps running on VeChain Blockchain.",
         "editor_languages": ["english"]
     },
     {
