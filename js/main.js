@@ -1,16 +1,4 @@
-function colorClass (index) {
-    let classes = [
-        "text-primary",
-        "text-success",
-        "text-info",
-        "text-secondary",
-        "text-danger",
-        "text-warning",
-        "text-dark"
-    ]
-    return classes[index % classes.length]
-}
-
+// Get brand color according to brand name.
 function brandColor (name) {
     const info = {
         "medium": '#00ab6c',
@@ -30,67 +18,71 @@ function brandColor (name) {
 function buildNavBarElements (categories) {
     var elements = []
     for (let key in categories) {
-        var linkElement = `<a class="p-2 text-muted text-capitalize" href="#${key}">${key}</a>`
+        var linkElement = `<a class="p-2 text-muted text-capitalize" href="#${key}">${categories[key].display}</a>`
         elements.push(linkElement)
     }
     return elements
 }
 
-function buildItemElement(item, colorClass) {
-    var element = $(
-        `<div class="col-md-4">
-            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col-12 p-4 d-flex flex-column position-static">
-                    <strong class="d-inline-block mb-2 text-capitalize" style="color: ${brandColor(item.platform)}">${item.platform}</strong>
-                    <h3 class="mb-1">${item.editor_title}</h3>
-                    <p class="card-text mb-auto">${item.editor_comments}</p>
-                    <a href="${item.url}" target="_blank">Continue reading</a>
-                </div>
-            </div>
-        </div>`
-    )
-    return element
+function buildItemElement(item) {
+    const outside = $('<div class="col-md-4"></div>')
+    const cardBox = $('<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"></div>')
+    const cardBody = $('<div class="col-12 p-4 d-flex flex-column position-static"></div>')
+    const topColorText = $(`<strong class="d-inline-block mb-2 text-capitalize" style="color: ${brandColor(item.platform)}">${item.platform}</strong>`)
+    const cardTitle = $(`<h3 class="mb-1">${item.editor_title}</h3>`)
+    const cardDescribe = $(`<p class="card-text mb-auto">${item.editor_comments}</p>`)
+    const cardLink = $(`<a href="${item.url}" target="_blank">Continue reading</a>`)
+    
+    topColorText.appendTo(cardBody)
+    cardTitle.appendTo(cardBody)
+    cardDescribe.appendTo(cardBody)
+    cardLink.appendTo(cardBody)
+
+    cardBody.appendTo(cardBox)
+    cardBox.appendTo(outside)
+
+    return outside
 }
 
-function buildContainer(items, categoryName) {
-    const categoryNameArray = []
-    for (let key in categories) {
-        categoryNameArray.push(key)
-    }
+function buildContainer(items, categoryKey, categoryDetail) {
 
-    const container = $(`<main role="main" class="container" id="${categoryName}"></main>`)
-    const header = $(`<h3 class="pb-4 mb-4 font-italic border-bottom text-capitalize">${categoryName}</h3>`)
-    const postsSection = $('<div class="row mb-2" id="blogs-section"></div>')
+    const container = $(`<main role="main" class="container" id="${categoryKey}"></main>`)
+    const header = $(`<h3 class="pb-4 mb-4 font-italic border-bottom text-capitalize">${categoryDetail.display}</h3>`)
+    const cardsSection = $('<div class="row mb-2" id="blogs-section"></div>')
     
     const matchedItems = []
     items.forEach(item => {
-        if (item.category == categoryName) {
+        if (item.category == categoryKey) {
             matchedItems.push(item)
         }
     })
 
-    const list = []
+    const cardElementList = []
     matchedItems.forEach(item => {
-        list.push(buildItemElement(item, colorClass(categoryNameArray.indexOf(item.category))))
+        cardElementList.push(buildItemElement(item))
     });
 
-    list.forEach(item => {
-        item.appendTo(postsSection)
+    cardElementList.forEach(item => {
+        item.appendTo(cardsSection)
     })
     header.appendTo(container)
-    postsSection.appendTo(container)
+    cardsSection.appendTo(container)
 
     return container
 }
 
 $(document).ready(function(){
+
     // Stuff the Nav Bar.
     const navBarElements = buildNavBarElements(categories)
     $("#category-section").html(navBarElements)
+
     // Stuff the main body.
     const containers = []
-    for (let categoryName in categories) {
-        containers.push(buildContainer(items, categoryName))
+    for (let categoryKey in categories) {
+        containers.push(
+            buildContainer(items, categoryKey, categories[categoryKey])
+        )
     }
     containers.forEach(container => {
         container.appendTo($('#my-body'))

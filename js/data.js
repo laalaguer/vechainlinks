@@ -1,23 +1,30 @@
 categories = {
     "media": {
+        display: "Media",
         description: "Official media accounts"
     },
     "website": {
+        display: "Websites",
         description: "Information hubs related to VeChain"
     },
     "people": {
+        display: "People",
         description: "Other account to follow"
     },
     "tools": {
+        display: "Tools",
         description: "Tools on desktop/mobile"
     },
     "chats": {
+        display: "Chats",
         description: "Join the discussions"
     },
     "docs": {
+        display: "Documentations",
         description: "Code and Libraries"
     },
     "code": {
+        display: "Code & SDK",
         description: "Open source projects"
     }
 }
