@@ -690,7 +690,7 @@ items = [
         "platform_identifier": null,
         "personal_account": false,
         "editor_title": "Insight",
-        "editor_comments": "A serverless VeChain explorer. It allows you to explore and search for blocks, transactions and accounts.",
+        "editor_comments": "A serverless light-weight VeChain explorer. Search for blocks, transactions and accounts.",
         "editor_languages": ["english"],
         "job_status":null
     },
@@ -703,13 +703,13 @@ items = [
         "platform_identifier": null,
         "personal_account": false,
         "editor_title": "Faucet",
-        "editor_comments": "Provides VET and VTHO on testnet freely. It is designed to help developers test applications as well as provide users an alternative to experience dApps on the VeChainThor blockchain.",
+        "editor_comments": "Provides VET and VTHO on testnet freely. Get some free VET/VTHO when you test dApps!",
         "editor_languages": ["english"],
         "job_status":null
     },
     {
         "url": "https://github.com/vechain/picasso",
-        "category": "tools",
+        "category": "code",
         "platform": "github",
         "run_by_official": true,
         "organization": true,
@@ -722,7 +722,7 @@ items = [
     },
     {
         "url": "https://github.com/vechain/b32",
-        "category": "tools",
+        "category": "code",
         "platform": "github",
         "run_by_official": true,
         "organization": true,
