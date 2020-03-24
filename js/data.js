@@ -582,19 +582,6 @@ items = [
         "job_status": null
     },
     {
-        "url": "https://github.com/vechain/thor-devkit.js",
-        "category": "code",
-        "platform": "github",
-        "run_by_vechain": true,
-        "organization": true,
-        "platform_identifier": null,
-        "personal_account": false,
-        "editor_title": "Thor Devkit",
-        "editor_comments": "JavaScript SDK library. Wallets generation, transaction assembling.",
-        "editor_languages": ["english"],
-        "job_status": null
-    },
-    {
         "url": "https://github.com/vechain/token-registry",
         "category": "code",
         "platform": "github",
@@ -617,6 +604,19 @@ items = [
         "personal_account": false,
         "editor_title": "App Hub",
         "editor_comments": "3rd party dApps appearing in Sync. You can submit one by pull request.",
+        "editor_languages": ["english"],
+        "job_status": null
+    },
+    {
+        "url": "https://github.com/vechain/thor-devkit.js",
+        "category": "code",
+        "platform": "github",
+        "run_by_vechain": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "Thor Devkit",
+        "editor_comments": "JavaScript SDK library. Wallets generation, transaction assembling.",
         "editor_languages": ["english"],
         "job_status": null
     },
