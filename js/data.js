@@ -26,6 +26,10 @@ categories = {
     "code": {
         display: "Code & SDK",
         description: "Open source projects"
+    },
+    "projects": {
+        display: "Projects",
+        description: "Projects running on VeChain"
     }
 }
 
@@ -149,15 +153,15 @@ items = [
         "job_status":null
     },
     {
-        "url": "https://twitter.com/FreshSupplyCoAu",
-        "category": "media",
+        "url": "https://freshsupplyco.com",
+        "category": "project",
         "platform": "twitter",
         "run_by_official": false,
         "organization": true,
         "platform_identifier": "FreshSupplyCoAu",
         "personal_account": false,
         "editor_title": "Fresh Supply Co.",
-        "editor_comments": "Food Company that offers provenance/traceability for ag exports. freshsupplyco.com",
+        "editor_comments": "Food Company that offers provenance/traceability for ag exports.",
         "editor_languages": ["english"],
         "job_status":null
     },
@@ -305,6 +309,19 @@ items = [
         "job_status":"vechain_team"     
     },
     {
+        "url": "https://twitter.com/creamethod",
+        "category": "people",
+        "platform": "twitter",
+        "run_by_official": false,
+        "organization": false,
+        "platform_identifier": "creamethod",
+        "personal_account": true,
+        "editor_title": "Cream",
+        "editor_comments": "Incubator and strategic VeChain partner.",
+        "editor_languages": ["english"],
+        "job_status":"third_party"     
+    },
+    {
         "url": "https://twitter.com/MiRei83_",
         "category": "people",
         "platform": "twitter",
@@ -392,7 +409,7 @@ items = [
         "personal_account": false,
         "editor_title": "VechainStats",
         "editor_comments": "Community VeChain explorer with rich functionalities.",
-        "editor_languages": ["english", "chinese", ""],
+        "editor_languages": ["english", "chinese",],
         "job_status":null
     },
     {
@@ -461,6 +478,19 @@ items = [
         "job_status":null
     },
     {
+        "url": "https://cointelegraph.com/consulting/vechain",
+        "category": "website",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "CoinTelegraph Consulting Vendor Page",
+        "editor_comments": "Case studies and technology review.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
         "url": "https://t.me/VeChainDevCommunity",
         "category": "chats",
         "platform": "telegram",
@@ -496,6 +526,19 @@ items = [
         "personal_account": false,
         "editor_title": "English Telegram",
         "editor_comments": "Traders, announcements and price discussions in English.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+        {
+        "url": "https://t.me/VeChainOfficialSeriousDiscussion",
+        "category": "chats",
+        "platform": "telegram",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": "VeChain Official Serious Discussion",
+        "personal_account": false,
+        "editor_title": "VeChain Offical",
+        "editor_comments": "Serious VeChain discussion free of memes, gifs and price discussion.",
         "editor_languages": ["english"],
         "job_status":null
     },
@@ -902,16 +945,172 @@ items = [
         "job_status":null
     },
     {
-        "url": "https://github.com/vechain/b32",
+        "url": "https://github.com/vechain/wallet-iOS-sdk",
         "category": "code",
         "platform": "github",
         "run_by_official": true,
         "organization": true,
         "platform_identifier": null,
         "personal_account": false,
-        "editor_title": "B32",
-        "editor_comments": "Signature collection of smart contracts method & events deployed on VeChain.",
+        "editor_title": "iOS SDK",
+        "editor_comments": "Interact with VeChain, create and manage wallets, compatible with Connex standard.",
         "editor_languages": ["english"],
         "job_status":null
-    }
+    },
+    {
+        "url": "https://www.dnvgl.com/mystory/index.html",
+        "category": "projects",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "My Story™ by DNV GL",
+        "editor_comments": "Blockchain powered Digital Assurance.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
+        "url": "https://en.foodgates.com",
+        "category": "projects",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "Foodgates",
+        "editor_comments": "B2B food traceability platform between France and China.",
+        "editor_languages": ["english", "chinese"],
+        "job_status":null
+    },
+    {
+        "url": "https://8hoursfoundation.org",
+        "category": "projects",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "8 Hours Foundation",
+        "editor_comments": "A complete NFT and cryptocurrency ecosystem for the Play Table, the world's first blockchain-enabled tabletop game console.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
+        "url": "https://jur.io/",
+        "category": "projects",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "Jur",
+        "editor_comments": "A decentralized legaltech ecosystem with online dispute resolution and smart legal contracts.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
+        "url": "https://oceanex.pro",
+        "category": "projects",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "OceanEx",
+        "editor_comments": "A cryptocurrency exchange partnered with VeChain.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
+        "url": "https://safehaven.io",
+        "category": "projects",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "Safe Haven",
+        "editor_comments": "A financial tool, asset management platform, and digital inheritance solution.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+        {
+        "url": "https://www.plair.life",
+        "category": "projects",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "Plair",
+        "editor_comments": "A decentralized gaming ecosystem.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
+        "url": "https://playdecent.gg",
+        "category": "projects",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "PlayDecent",
+        "editor_comments": "Gaming platform to stake and win tokens.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
+        "url": "https://www.cecilalliance.com",
+        "category": "projects",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "Cecil Alliance",
+        "editor_comments": "The Internet of Animals: Empowering animal data through blockchain.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+     {
+        "url": "https://hacken.ai",
+        "category": "projects",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "HackenAI",
+        "editor_comments": "A cybersecurity suit for blockchain.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
+        "url": "https://www.workpi.io",
+        "category": "projects",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "WorkPi",
+        "editor_comments": "Human Resource Management and shared job economy platform.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
+        "url": "https://snkcoin.org",
+        "category": "projects",
+        "platform": "website",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "SNKr",
+        "editor_comments": "A decentralized streetwear ecosystem.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
 ]
