@@ -67,7 +67,7 @@ items = [
         "editor_comments": "Developer related news, updates on new technology advancements, tutorials, and milestone releases.",
         "editor_title": "VeChainDev Twitter",
         "editor_languages": ["english"],
-        "job_status":"vechain_team"
+        "job_status": null
     },
 
     {
@@ -92,9 +92,9 @@ items = [
         "platform_identifier": "6306565418",
         "personal_account": false,
         "editor_title": "VeChain Fans Weibo",
-        "editor_comments": "Chinese language Fan account on Weibo.",
+        "editor_comments": "Chinese fans discussion on Weibo.",
         "editor_languages": ["chinese"],
-        "job_status":"community_member"
+        "job_status": null
     },
     {
         "url": "https://twitter.com/VeChainStats",
@@ -107,7 +107,7 @@ items = [
         "editor_title": "Vechainstats",
         "editor_comments": "Updates from VeChainStats.com, a powerful community block explorer and analytics tool.",
         "editor_languages": ["english"],
-        "job_status":"community_member"
+        "job_status": null
     },
     {
         "url": "https://vechain101.com/",
@@ -740,7 +740,7 @@ items = [
         "organization": true,
         "platform_identifier": null,
         "personal_account": false,
-        "editor_title": "VeChain.org",
+        "editor_title": "Vechain.org",
         "editor_comments": "Official website of the VeChain foundation. Includes bounty information and technology advancements.",
         "editor_languages": ["english", "chinese"],
         "job_status":null
