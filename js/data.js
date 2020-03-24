@@ -188,6 +188,19 @@ items = [
         "job_status":"community_member"
     },
     {
+        "url": "https://twitter.com/Sarah_Nabaa",
+        "category": "people",
+        "platform": "twitter",
+        "run_by_official": false,
+        "organization": false,
+        "platform_identifier": "Sarah_Nabaa",
+        "personal_account": true,
+        "editor_title": "Sarah Nabaa",
+        "editor_comments": "Head of VeChain Southeast Asia & Australia.",
+        "editor_languages": ["english"],
+        "job_status":"vechain_team"
+    },
+    {
         "url": "https://twitter.com/liboliqi",
         "category": "people",
         "platform": "twitter",
@@ -212,19 +225,19 @@ items = [
         "editor_comments": "Founder of Verida.",
         "editor_languages": ["english"],
         "job_status":"community_member"
-    },    
+    },
     {
-        "url": "https://twitter.com/Sarah_Nabaa",
+        "url": "https://twitter.com/Raleigh_CA",
         "category": "people",
         "platform": "twitter",
         "run_by_official": false,
         "organization": false,
-        "platform_identifier": "Sarah_Nabaa",
+        "platform_identifier": "Raleigh_CA",
         "personal_account": true,
-        "editor_title": "Sarah Nabaa",
-        "editor_comments": "Head of VeChain Southeast Asia & Australia.",
+        "editor_title": "Kenneth Ashley",
+        "editor_comments": "Community Developer.",
         "editor_languages": ["english"],
-        "job_status":"vechain_team"
+        "job_status":"community_member"
     },
     {
         "url": "https://twitter.com/jasonrockwood",
@@ -290,7 +303,21 @@ items = [
         "editor_comments": "Community Dev and founder of VeBlocks.net.",
         "editor_languages": ["english"],
         "job_status":"community_member"
-    },    
+    },
+    {
+        "url": "https://twitter.com/veriartivra",
+        "category": "people",
+        "platform": "twitter",
+        "run_by_official": false,
+        "organization": false,
+        "platform_identifier": "veriartivra",
+        "personal_account": true,
+        "editor_title": "Jamie",
+        "editor_comments": "CEO of VeriArti. A VeChain eco-system project.",
+        "editor_languages": ["english"],
+        "job_status":"third_party"
+    },
+    
     {
         "url": "https://www.reddit.com/r/Vechain/",
         "category": "chats",
@@ -457,6 +484,19 @@ items = [
         "personal_account": false,
         "editor_title": "Community Browser Extension",
         "editor_comments": "Discussion of a newly made Chrome browser wallet extension.",
+        "editor_languages": ["english"],
+        "job_status":null
+    },
+    {
+        "url": "https://t.me/VeriArti",
+        "category": "chats",
+        "platform": "telegram",
+        "run_by_official": false,
+        "organization": true,
+        "platform_identifier": "VeriArti",
+        "personal_account": false,
+        "editor_title": "VeriArti Offical",
+        "editor_comments": "General topics about VeriArti - Unique digital art tokens (NFTs) on VeChain.",
         "editor_languages": ["english"],
         "job_status":null
     },
