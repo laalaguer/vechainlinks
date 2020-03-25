@@ -1,0 +1,63 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.border-bottom-thick {
+    line-height: 1;
+    border-bottom: 3px solid #000000;
+}
+
+.border-bottom-light {
+    line-height: 1;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+@media screen and (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+/* hide desktop hover menu by default */
+.hover-menu {
+    display: none;
+    width:65px;
+    height:65px; 
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer;
+    background-color: white;
+}
+
+/* display desktop hover menu over large screen */
+@media screen and (min-width: 576px) {
+    .hover-menu {
+        display: block;
+    }
+}
+
+.hover-button {
+    display: none; /* hide display on naturally */
+    width:50px;
+    height:50px; 
+    font-size: 12px;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer;
+}
+
+/* display on small screens */
+@media screen and (max-width: 576px) {
+    .hover-button {
+        display: block;
+    }
+}
