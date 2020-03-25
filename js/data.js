@@ -102,7 +102,7 @@ items = [
     },
     {
         "url": "https://twitter.com/VeChainStats",
-        "category": "media",
+        "category": "people",
         "platform": "twitter",
         "run_by_vechain": false,
         "organization": true,
@@ -112,10 +112,10 @@ items = [
         "editor_comments": "Updates from VeChainStats.com, a powerful community block explorer and analytics tool.",
         "editor_languages": ["english"],
         "job_status": null
-    },
+    }
     {
         "url": "https://twitter.com/VechainThorCom",
-        "category": "media",
+        "category": "people",
         "platform": "twitter",
         "run_by_vechain": false,
         "organization": true,
@@ -141,7 +141,7 @@ items = [
     },
     {
         "url": "https://twitter.com/vechainthorscan",
-        "category": "media",
+        "category": "people",
         "platform": "twitter",
         "run_by_vechain": false,
         "organization": true,
@@ -375,7 +375,7 @@ items = [
     },
     {
         "url": "https://www.reddit.com/r/Vechain/",
-        "category": "chats",
+        "category": "media",
         "platform": "reddit",
         "run_by_vechain": true,
         "organization": true,
@@ -383,6 +383,19 @@ items = [
         "personal_account": false,
         "editor_title": "VeChain Reddit",
         "editor_comments": "General discussion channel on Reddit.",
+        "editor_languages": ["english"],
+        "job_status": null
+    },
+    {
+        "url": "https://www.reddit.com/r/VeChainTrader/",
+        "category": "media",
+        "platform": "reddit",
+        "run_by_vechain": true,
+        "organization": true,
+        "platform_identifier": "VechainTrader",
+        "personal_account": false,
+        "editor_title": "VeChain Trader",
+        "editor_comments": "VET price and market discussion.",
         "editor_languages": ["english"],
         "job_status": null
     },
@@ -396,6 +409,19 @@ items = [
         "personal_account": false,
         "editor_title": "VeChain Sync",
         "editor_comments": "Transfer funds, view dApps and manage wallets on Mac, Windows, Linux. Supports Ledger Nano S and X.",
+        "editor_languages": ["english"],
+        "job_status": null
+    },
+    {
+        "url": "https://www.vechain.com/product/toolchain",
+        "category": "tools",
+        "platform": "desktop",
+        "run_by_vechain": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "ToolChain",
+        "editor_comments": "VeChain's blockchain-as-a-service (Baas) platform.",
         "editor_languages": ["english"],
         "job_status": null
     },
@@ -1166,6 +1192,19 @@ items = [
         "job_status": null
     },
     {
+        "url": "https://www.veriarti.io",
+        "category": "projects",
+        "platform": "website",
+        "run_by_vechain": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "Veriarti",
+        "editor_comments": "Digital art verification and NFT creator.",
+        "editor_languages": ["english"],
+        "job_status": null
+    },
+    {
         "url": "https://snkcoin.org",
         "category": "projects",
         "platform": "website",
@@ -1178,4 +1217,17 @@ items = [
         "editor_languages": ["english"],
         "job_status": null
     },
+    {
+        "url": "https://www.blockbabies.world",
+        "category": "projects",
+        "platform": "website",
+        "run_by_vechain": false,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "Block Babies",
+        "editor_comments": "NFT game battling infant warriors.",
+        "editor_languages": ["english"],
+        "job_status": null
+    }
 ]
