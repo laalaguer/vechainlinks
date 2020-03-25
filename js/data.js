@@ -112,7 +112,7 @@ items = [
         "editor_comments": "Updates from VeChainStats.com, a powerful community block explorer and analytics tool.",
         "editor_languages": ["english"],
         "job_status": null
-    }
+    },
     {
         "url": "https://twitter.com/VechainThorCom",
         "category": "people",
