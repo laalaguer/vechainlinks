@@ -79,7 +79,7 @@ function buildItemElement(item) {
     const topColorText = $(`<strong class="d-inline-block mb-2 text-capitalize" style="color: ${brandColor(item.platform)}">${item.platform}</strong>`)
     var cardTitle;
     if (item.job_status !== null ) {
-        cardTitle = $(`<h3 class="mb-1">${item.editor_title}</h3><div class="mb-1 text-muted">${jobStatusName(item.job_status)}</div>`)
+        cardTitle = $(`<h3 class="mb-1">${item.editor_title}</h3><div class="mb-1 text-muted job-title">${jobStatusName(item.job_status)}</div>`)
     } else {
         cardTitle = $(`<h3 class="mb-1">${item.editor_title}</h3><div class="mb-1 text-muted">`)
     }
@@ -99,8 +99,8 @@ function buildItemElement(item) {
 
 function buildContainer(items, categoryKey, categoryDetail) {
 
-    const container = $(`<main role="main" class="container" id="${categoryKey}"></main>`)
-    const header = $(`<h3 class="pb-4 mb-4 font-italic border-bottom text-capitalize">${categoryDetail.display}</h3>`)
+    const container = $(`<main role="main" class="container"></main>`)
+    const header = $(`<h3 class="pb-4 mb-4 font-italic border-bottom text-capitalize" id="${categoryKey}">${categoryDetail.display} <a class="my-anchor text-muted" href="#${categoryKey}">#</a></h3>`)
     const cardsSection = $('<div class="row mb-2" id="blogs-section"></div>')
     
     const matchedItems = []

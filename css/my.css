@@ -44,7 +44,8 @@
 }
 
 .hover-button {
-    display: none; /* hide display on naturally */
+    display: block;
+    /*display: none;  hide display on naturally */
     width:50px;
     height:50px; 
     font-size: 12px;
@@ -53,6 +54,7 @@
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     cursor: pointer;
+    background-color: white;
 }
 
 /* display on small screens */
@@ -60,4 +62,36 @@
     .hover-button {
         display: block;
     }
+}
+
+.job-title {
+    font-size: small;
+    font-weight:300;
+}
+
+.hidden-footer {
+    z-index: 98;
+    position: relative;
+}
+
+.my-body {
+    /* margin-bottom: 50px; */
+    margin-bottom: 0px;
+}
+
+/* @media (min-width: 576px) {
+    .hidden-footer {
+        position: relative;
+    }
+    .my-body {
+        margin-bottom: 0px;
+    }
+} */
+
+.my-anchor {
+}
+
+.my-anchor:hover {
+    color: black;
+    cursor: pointer;
 }

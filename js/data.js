@@ -524,8 +524,8 @@ items = [
         "organization": true,
         "platform_identifier": null,
         "personal_account": false,
-        "editor_title": "CoinTelegraph Consulting Vendor Page",
-        "editor_comments": "Case studies and technology review.",
+        "editor_title": "CoinTelegraph",
+        "editor_comments": "Consulting Vendor Page. Case studies and technology reviews.",
         "editor_languages": ["english"],
         "job_status": null
     },
@@ -926,7 +926,7 @@ items = [
         "organization": true,
         "platform_identifier": null,
         "personal_account": false,
-        "editor_title": "Vechain.com",
+        "editor_title": "VeChain.com",
         "editor_comments": "The Official website of VeChain's Blockchain-as-a-Service company.",
         "editor_languages": ["english", "chinese"],
         "job_status": null
@@ -939,7 +939,7 @@ items = [
         "organization": true,
         "platform_identifier": null,
         "personal_account": false,
-        "editor_title": "Vechain.org",
+        "editor_title": "VeChain.org",
         "editor_comments": "Official website of the VeChain foundation. Includes bounty information and technology advancements.",
         "editor_languages": ["english", "chinese"],
         "job_status": null

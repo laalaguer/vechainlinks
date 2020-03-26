@@ -16,7 +16,7 @@
     <link href="css/my.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="my-body">
     <div class="container" id="my-body">
       <!-- Navbar -->
       <header class="py-3 border-bottom-thick">
@@ -28,7 +28,7 @@
             <a class="blog-header-logo text-dark" href="#">VeChain Links</a>
           </div>
           <div class="col-1 col-sm-1 col-lg-4 d-flex justify-content-end align-items-center">
-            <a class="text-muted" href="#" aria-label="Search">
+            <a class="text-muted" href="#" aria-label="Search" style="display:none;">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
             </a>
             <!-- <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a> -->
@@ -50,15 +50,18 @@
           <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading below...</a></p>
         </div>
       </div>
-
     </div>
 
-    <button id="to-top-button" onclick="topFunction()" type="button" class="btn btn-light rounded-circle p-0 hover-button">&#8593;<br>Top</button>
-    <button id="to-top-menu" onclick="topFunction()" type="button" class="btn btn-outline-secondary p-0 hover-menu">&#8593;<br>Top</button>
+    <button id="to-top-button" onclick="topFunction()" type="button" class="btn btn-outline-secondary rounded-circle p-0 hover-button">&#8593;<br>Top</button>
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
     <script src="js/scroll.js"></script>
+
+    <footer class="blog-footer py-1 fixed-bottom hidden-footer">
+      <p class="mb-0">Submit a new link? </p>
+      <p>Email to <span class="text-primary">admin@vechainlinks.com</span></p>
+    </footer>
   </body>
 </html>
