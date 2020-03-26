@@ -18,9 +18,9 @@ Target: Collect Links inside VeChain eco-system.
 - Dapps URLs, Dapps Githubs
 
 Result:
-- A simple working static site.
-- 5-10 users to comment about the website.
-- Open for public members to contribute.
+- [x] A simple working static site.
+- [x] 5-10 users to comment about the website.
+- [ ] Open for public members to contribute.
 
 ## Milestone #2: Make the Website Dynamic
 
