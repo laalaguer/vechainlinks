@@ -1,3 +1,4 @@
+// To which category we put this card into?
 categories = {
     "media": {
         display: "Media",
@@ -33,6 +34,38 @@ categories = {
     }
 }
 
+// On which platform does this person, article, code reside?
+platforms = {
+    'medium': {
+        display: "Medium"
+    },
+    'twitter': {
+        display: "Twitter"
+    },
+    'weibo': {
+        display: "Weibo"
+    },
+    'website': {
+        display: "Website"
+    },
+    'reddit': {
+        display: "Reddit"
+    },
+    'desktop': {
+        display: "Desktop"
+    },
+    'telegram': {
+        display: "Telegram"
+    },
+    'github': {
+        display: "Github"
+    },
+    'mobile': {
+        display: "Mobile"
+    }
+}
+
+// Items that should be displayed on the page.
 items = [
     {
         "url": "https://medium.com/@vechainofficial",

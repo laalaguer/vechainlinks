@@ -1,39 +1,51 @@
-# Vechain Links - Show me interesting subjects in VeChain!
+# Vechain Links - Show me interesting subjects on VeChain!
 
-## Step One: Build a Static Website
+`vechainlinks.com` is a place where you find interesting people, project updates and news from big names in VeChain eco-system.
 
-Links to:
+## Milestone #1: Build a Static Website
 
-- Medium:
-- Twitter:
-- Reddit:
-- Weibo:
-- Official Sites: 
-- Standalone Media/Tools Sites:
-- Telegram Channels:
-- Codes: VeChain OrganizationiOS, Android
-- Tools: Desktop, 
-- Dapps URLs, Dapps Githubs, perosnal projects
+Target: Collect Links inside VeChain eco-system.
+- Medium
+- Twitter
+- Reddit
+- Weibo
+- Official Sites
+- Standalone Media Sites
+- Useful Tools.
+- Telegram Channels
+- Codes: VeChain
+- Documentation for developers.
+- Dapps URLs, Dapps Githubs
 
-## Step Two: Build a Dynamic Website
+Result:
+- A simple working static site.
+- 5-10 users to comment about the website.
+- Open for public members to contribute.
 
-Apart from above "static" goals, we need some "scraper" or "reporter" system, that automatically gathers information from Twitter/Medium/Reddit/Github to show "progress" of the VeChain.
+## Milestone #2: Make the Website Dynamic
 
-- When are the resources updated?
-- What content is updated? Anything new?
-- 
+Apart from above "static" goals, build a "scraper" or "reporter" system, that automatically gathers information from Twitter/Medium/Reddit/Github to show "progress" of the VeChain.
 
-As well as other hashtags or mentions from other channels:
-- Cointelegraph:
-- CoinDesk:
-- OceanEx:
+Target #1:
+- { Reddit, Medium, WP } Feeds -- RSS can be obtained directly.
+- { Twitter, Weibo, Telegram } Feeds. -- RSS can be obtained from 3rd party.
+- { Website } - simple hash-then-cache scrapper bot.
+- { Telegram, Github } - Need to develop ourselves.
+- Standardize the "social media" backend and output a single RSS API: {bot_type:, user_identifier:, newest:, previous_cache:}
+- Cache the RSS result, server fetch from source every X minutes.
 
+Target #2:
+- A Dynamic frontend to display Feeds (excerpt)
+- Still don't use any package tool possible, easy to understand by collaborators.
 
-## Step Three: Automate build process, let the public members contribute
+Result:
+- A backend, to collect feeds on different platforms, and turning into RSS.
+- A simple, dynamic website frontend, to poll RSS feed and display.
+- 10-15 users to comment about the website.
+- Open for public members to contribute.
 
-Let the source code can be submitted by an outsider. And once improved, can be automatically built into an image, then mounted on on the main website.
+## Milestone #3: Subscribe and Analyze
 
-- A contributor makes a change.
-- PR review and merge by the maintainer.
-- Auto check and build zip by Travis.
-- Unzip and deploy on server. - auto?
+- Google Analytics
+- Email Subscribers
+- Get first 20-50 users on board.
