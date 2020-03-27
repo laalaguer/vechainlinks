@@ -63,10 +63,11 @@ function compareItems(itemA, itemB) {
     return 0
 }
 
-function buildNavBarElements (categories) {
+function buildMenuElements (categories) {
     var elements = []
     for (let key in categories) {
-        var linkElement = $(`<a class="p-2 text-muted text-capitalize" href="#${key}">${categories[key].display}</a>`)
+        const menuID = "menu-" + key
+        var linkElement = $(`<a class="p-2 text-muted text-capitalize" href="#${key}" id="${menuID}" onclick="menuItemClicked(this)">${categories[key].display}</a>`)
         elements.push(linkElement)
     }
     return elements
@@ -129,7 +130,7 @@ function buildContainer(items, categoryKey, categoryDetail) {
 $(document).ready(function(){
     console.log(items.length)
     // Stuff the Nav Bar.
-    const navBarElements = buildNavBarElements(categories)
+    const navBarElements = buildMenuElements(categories)
     navBarElements.forEach(element => element.appendTo($("#category-section")))
 
     // Stuff the main body.
