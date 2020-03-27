@@ -66,7 +66,7 @@ function compareItems(itemA, itemB) {
 function buildNavBarElements (categories) {
     var elements = []
     for (let key in categories) {
-        var linkElement = `<a class="p-2 text-muted text-capitalize" href="#${key}">${categories[key].display}</a>`
+        var linkElement = $(`<a class="p-2 text-muted text-capitalize" href="#${key}">${categories[key].display}</a>`)
         elements.push(linkElement)
     }
     return elements
@@ -130,7 +130,7 @@ $(document).ready(function(){
     console.log(items.length)
     // Stuff the Nav Bar.
     const navBarElements = buildNavBarElements(categories)
-    $("#category-section").html(navBarElements)
+    navBarElements.forEach(element => element.appendTo($("#category-section")))
 
     // Stuff the main body.
     const containers = []
