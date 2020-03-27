@@ -69,6 +69,15 @@
     font-weight:300;
 }
 
+.small-big-title {
+    font-size: 1.5rem;
+}
+
+.compact-title-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .hidden-footer {
     z-index: 98;
     position: relative;
@@ -89,6 +98,7 @@
 } */
 
 .my-anchor {
+    color: grey;
 }
 
 .my-anchor:hover {

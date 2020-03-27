@@ -1,12 +1,24 @@
 //Get the button:
 const toTopButton = document.getElementById("to-top-button");
-// const toTopMenu = document.getElementById("to-top-menu");
+const biggestTitleContainer = document.getElementById("headline-container");
+const biggestTitle = document.getElementById("biggest-title");
 
 window.onscroll = function() {scrollFunction()};
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 500px from the top of the document, show the button
 function scrollFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+  const scrolledPx = document.body.scrollTop || document.documentElement.scrollTop || 0
+  if (scrolledPx > 115) {
+    biggestTitleContainer.classList.remove("py-3")
+    biggestTitleContainer.classList.add("py-1")
+    biggestTitle.classList.add("small-big-title")
+  } else {
+    biggestTitleContainer.classList.remove("py-1")
+    biggestTitleContainer.classList.add("py-3")
+    biggestTitle.classList.remove("small-big-title")
+  }
+
+  if (scrolledPx > 500) {
       toTopButton.style.display = "block";
     } else {
       toTopButton.style.display = "none";
