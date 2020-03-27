@@ -1262,5 +1262,31 @@ items = [
         "editor_comments": "NFT game battling infant warriors.",
         "editor_languages": ["english"],
         "job_status": null
+    },
+    {
+        "url": "https://www.vetoolchain.cn",
+        "category": "websites",
+        "platform": "website",
+        "run_by_vechain": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "VeChain ToolChain Official Site",
+        "editor_comments": "One-stop Data BaaS Platform.",
+        "editor_languages": ["english"],
+        "job_status": null
+    },
+    {
+        "url": "https://docs.vetoolchain.com",
+        "category": "docs",
+        "platform": "website",
+        "run_by_vechain": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "VeChain ToolChain™ Document Center",
+        "editor_comments": "VeChain ToolChain™ Document Center",
+        "editor_languages": ["english"],
+        "job_status": null
     }
 ]
