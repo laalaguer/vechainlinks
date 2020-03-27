@@ -67,7 +67,7 @@ function buildMenuElements (categories) {
     var elements = []
     for (let key in categories) {
         const menuID = "menu-" + key
-        var linkElement = $(`<a class="p-2 text-muted text-capitalize" href="#${key}" id="${menuID}" onclick="menuItemClicked(this)">${categories[key].display}</a>`)
+        var linkElement = $(`<a class="p-2 text-muted text-capitalize" href="#${key}" id="${menuID}" onclick="jumpToAnchor(this)">${categories[key].display}</a>`)
         elements.push(linkElement)
     }
     return elements
@@ -101,7 +101,7 @@ function buildItemElement(item) {
 function buildContainer(items, categoryKey, categoryDetail) {
 
     const container = $(`<main role="main" class="container"></main>`)
-    const header = $(`<h3 class="pb-4 mb-4 font-italic border-bottom text-capitalize" id="${categoryKey}">${categoryDetail.display} <a class="my-anchor text-muted" href="#${categoryKey}">#</a></h3>`)
+    const header = $(`<h3 class="pb-4 mb-4 font-italic border-bottom text-capitalize" id="${categoryKey}">${categoryDetail.display} <a class="my-anchor text-muted" href="#${categoryKey}" onclick="jumpToAnchor(this)">#</a></h3>`)
     const cardsSection = $('<div class="row mb-2" id="blogs-section"></div>')
     
     const matchedItems = []

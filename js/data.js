@@ -160,6 +160,19 @@ items = [
         "job_status": null
     },
     {
+        "url": "https://www.vetoolchain.cn",
+        "category": "websites",
+        "platform": "website",
+        "run_by_vechain": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "VeChain ToolChain Official Site",
+        "editor_comments": "One-stop Data BaaS Platform.",
+        "editor_languages": ["english"],
+        "job_status": null
+    },
+    {
         "url": "https://vechain101.com/",
         "category": "websites",
         "platform": "website",
@@ -442,19 +455,6 @@ items = [
         "personal_account": false,
         "editor_title": "VeChain Sync",
         "editor_comments": "Transfer funds, view dApps and manage wallets on Mac, Windows, Linux. Supports Ledger Nano S and X.",
-        "editor_languages": ["english"],
-        "job_status": null
-    },
-    {
-        "url": "https://www.vechain.com/product/toolchain",
-        "category": "tools",
-        "platform": "desktop",
-        "run_by_vechain": true,
-        "organization": true,
-        "platform_identifier": null,
-        "personal_account": false,
-        "editor_title": "ToolChain",
-        "editor_comments": "VeChain's blockchain-as-a-service (Baas) platform.",
         "editor_languages": ["english"],
         "job_status": null
     },
@@ -845,6 +845,19 @@ items = [
         "personal_account": false,
         "editor_title": "Learning Center",
         "editor_comments": "Developer resources for docs, tutorials and knowledge.",
+        "editor_languages": ["english"],
+        "job_status": null
+    },
+    {
+        "url": "https://docs.vetoolchain.com",
+        "category": "docs",
+        "platform": "website",
+        "run_by_vechain": true,
+        "organization": true,
+        "platform_identifier": null,
+        "personal_account": false,
+        "editor_title": "VeChain ToolChain™ Document Center",
+        "editor_comments": "VeChain ToolChain™ Document Center",
         "editor_languages": ["english"],
         "job_status": null
     },
@@ -1260,32 +1273,6 @@ items = [
         "personal_account": false,
         "editor_title": "Block Babies",
         "editor_comments": "NFT game battling infant warriors.",
-        "editor_languages": ["english"],
-        "job_status": null
-    },
-    {
-        "url": "https://www.vetoolchain.cn",
-        "category": "websites",
-        "platform": "website",
-        "run_by_vechain": true,
-        "organization": true,
-        "platform_identifier": null,
-        "personal_account": false,
-        "editor_title": "VeChain ToolChain Official Site",
-        "editor_comments": "One-stop Data BaaS Platform.",
-        "editor_languages": ["english"],
-        "job_status": null
-    },
-    {
-        "url": "https://docs.vetoolchain.com",
-        "category": "docs",
-        "platform": "website",
-        "run_by_vechain": true,
-        "organization": true,
-        "platform_identifier": null,
-        "personal_account": false,
-        "editor_title": "VeChain ToolChain™ Document Center",
-        "editor_comments": "VeChain ToolChain™ Document Center",
         "editor_languages": ["english"],
         "job_status": null
     }

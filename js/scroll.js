@@ -51,8 +51,10 @@ biggestTitle.addEventListener("click", function (event) {
   event.preventDefault()
 })
 
-
-function menuItemClicked(element) {
+function jumpToAnchor(element) {
+  element.scrollIntoView({
+    behavior: "smooth"
+  })
   const link = element.getAttribute('href')
   const menuHeaderHeight = $(link).offset().top
 
