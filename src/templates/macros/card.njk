@@ -1,0 +1,15 @@
+{% macro card(item) %}
+<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+    <div class="col-12 p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-capitalize" style="color: {{item.platform | getBrandColor }}">{{item.platform}}</strong>
+        <h3 class="mb-1">{{item.editor_title}}</h3>
+        {% if item.job_status != null -%}
+        <div class="mb-1 text-muted job-title">{{item.job_status | getJobStatusName }}</div>
+        {%- endif %}
+        <p class="card-text mb-auto">{{item.editor_comments}}</p>
+        <a href="{{item.url}}" target="_blank">Continue reading</a>
+    </div>
+    </div>
+</div>
+{% endmacro %}

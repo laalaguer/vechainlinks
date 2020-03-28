@@ -1,0 +1,8 @@
+{% import 'macros/card.njk' as mcard %}
+{% macro section(items, categoryKey) %}
+{% for item in items -%}
+{% if item.category == categoryKey -%}
+  {{ mcard.card(item) }}
+{%- endif %}
+{%- endfor %}
+{% endmacro %}
