@@ -99,7 +99,6 @@ function buildItemElement(item) {
 }
 
 function buildContainer(items, categoryKey, categoryDetail) {
-
     const container = $(`<main role="main" class="container"></main>`)
     const header = $(`<h3 class="pb-4 mb-4 font-italic border-bottom text-capitalize" id="${categoryKey}">${categoryDetail.display} <a class="my-anchor text-muted" href="#${categoryKey}" onclick="jumpToAnchor(this)">#</a></h3>`)
     const cardsSection = $('<div class="row mb-2" id="blogs-section"></div>')

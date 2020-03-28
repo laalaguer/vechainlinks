@@ -83,20 +83,6 @@
     position: relative;
 }
 
-.my-body {
-    /* margin-bottom: 50px; */
-    margin-bottom: 0px;
-}
-
-/* @media (min-width: 576px) {
-    .hidden-footer {
-        position: relative;
-    }
-    .my-body {
-        margin-bottom: 0px;
-    }
-} */
-
 .my-anchor {
     color: grey;
 }
