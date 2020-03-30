@@ -2,7 +2,29 @@
 
 `vechainlinks.com` is a place where you find interesting people, project updates and news from big names in VeChain eco-system.
 
-## Milestone #1: Build a Static Website
+## Build & Test on Local Machine
+
+Run the project:
+```
+npm install
+npm run dev
+```
+
+Visit in Browser:
+```
+dist/index.html
+```
+
+Edit to update:
+```
+src/data/data.json
+```
+
+Commit your changes to `data.json` and push the changes to Github!
+
+# Development History
+
+## Milestone #1: Build a Simple Static Website
 
 Target: Collect Links inside VeChain eco-system.
 - Medium
@@ -19,7 +41,7 @@ Target: Collect Links inside VeChain eco-system.
 
 Result:
 - [x] A simple working static site.
-- [x] 5-10 users to comment about the website.
+- [x] 5 users to comment about the website.
 - [x] Open for public members to contribute.
 
 ## Milestone #2: Make the Website Dynamic
@@ -34,6 +56,7 @@ Target #1:
 - Standardize the "social media" backend and output a single RSS API: {bot_type:, user_identifier:, newest:, previous_cache:}
 - Cache the RSS result, server fetch from source every X minutes.
 
+Analyze:
 
 Reddit: [Atom-1.0]
 https://www.reddit.com/r/VeChain/.rss
@@ -80,19 +103,19 @@ response
 ```
 Target #2:
 - A Dynamic frontend to display Feeds (excerpt)
-- Still don't use any package tool possible, easy to understand by collaborators.
+- The frontend should be fully static (many data rendered beforehand)
+- A Dynamic Backend to collect RSS and serve API.
+- Use a simple package manager to automate the build process.
 
 Result:
-- A backend, to collect feeds on different platforms, and turning into RSS.
-- A simple, dynamic website frontend, to poll RSS feed and display.
-- 10-15 users to comment about the website.
-- Open for public members to contribute.
+- [] A backend, to collect feeds on different platforms, and turning into RSS.
+- [] A simple, dynamic website frontend, to poll RSS feed and display.
+- [] 20 users to comment about the website.
+- [] Open for public members to contribute.
 
 ## Milestone #3: Subscribe and Analyze
 
-- Google Analytics
-- Email Subscribers
-- Get first 20-50 users on board.
-
-- Email = https://subscribe.vechainlinks.com/?redirect=url
-- 
+- [x] Google Analytics
+- [] Email Subscribers
+- [] Get first 50 users on board.
+- [] Email Centre = https://subscribe.vechainlinks.com/?redirect=url

@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "`vechainlinks.com` is a place where you find interesting people, project updates and news from big names in VeChain eco-system.",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",

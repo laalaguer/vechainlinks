@@ -3,6 +3,7 @@ const clean = require('gulp-clean');
 const nunjucksRender = require('gulp-nunjucks-render');
 const data = require('gulp-data');
 const prettyHtml = require('gulp-pretty-html');
+const Crypto = require('crypto-js');
 
 const manageEnvironment = function(environment) {
   // Get brand color according to brand name.
@@ -33,6 +34,13 @@ const manageEnvironment = function(environment) {
           "third_party": "Third Party"
       }
       return (info[key.toLowerCase()] || null)
+    }
+  )
+
+  environment.addFilter(
+    'getHashID',
+    function (key) {
+      return Crypto.SHA256(key).toString().slice(0,7)
     }
   )
 
