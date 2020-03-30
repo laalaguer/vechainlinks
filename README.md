@@ -1,8 +1,10 @@
-# Vechain Links - Show me interesting subjects on VeChain!
+# Vechain Links - Free updates and news of VeChain!
 
-`vechainlinks.com` is a place where you find interesting people, project updates and news from big names in VeChain eco-system.
+Website: [https://vechainlinks.com](https://vechainlinks.com)
 
-## Build & Test on Local Machine
+`VeChainLinks.com` a place where you find interesting people, project updates and news from big names in VeChain eco-system.
+
+## How to Build & Test on Local Machine
 
 Run the project:
 ```
