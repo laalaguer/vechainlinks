@@ -4,7 +4,8 @@
   "description": "`vechainlinks.com` is a place where you find interesting people, project updates and news from big names in VeChain eco-system.",
   "main": "index.js",
   "dependencies": {
-    "crypto-js": "^4.0.0"
+    "crypto-js": "^4.0.0",
+    "rss-parser": "^3.7.6"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

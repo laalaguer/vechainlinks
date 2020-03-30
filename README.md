@@ -67,8 +67,8 @@ Medium: [RSS-2]
 https://medium.com/feed/@Medium
 
 WP: RSS, [RSS-2], [Atom-1.0] 
-http://example.com/?feed=rss2
-http://example.com/?feed=atom
+http://vechain101.com/?feed=rss2
+http://vechain101.com/?feed=atom
 
 Twitter: [RSS-2.0]
 https://queryfeed.net/tw?q=%40abyteahead
