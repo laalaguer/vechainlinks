@@ -17,7 +17,8 @@
     "gulp-uglify": "^3.0.2"
   },
   "scripts": {
-    "dev": "gulp"
+    "dev": "NODE_ENV=development gulp dev",
+    "publish": "NODE_ENV=production gulp publish"
   },
   "repository": {
     "type": "git",

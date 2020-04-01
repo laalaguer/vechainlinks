@@ -2,6 +2,7 @@ const { series, parallel, src, dest, watch } = require('gulp');
 const clean = require('gulp-clean');
 const nunjucksRender = require('gulp-nunjucks-render');
 const data = require('gulp-data');
+const rename = require("gulp-rename")
 const prettyHtml = require('gulp-pretty-html');
 const Crypto = require('crypto-js');
 
@@ -41,6 +42,13 @@ const manageEnvironment = function(environment) {
     'getHashID',
     function (key) {
       return Crypto.SHA256(key).toString().slice(0,7)
+    }
+  )
+
+  environment.addGlobal(
+    'makeString',
+    function (key) {
+      return String(key)
     }
   )
 
@@ -85,6 +93,14 @@ const manageEnvironment = function(environment) {
   )
 }
 
+function copyEnv() {
+  if (process.env.NODE_ENV == "development") {
+    return src('src/env/env.local.js').pipe(rename('env.js')).pipe(dest('dist/js/'))
+  } else {
+    return src('src/env/env.production.js').pipe(rename('env.js')).pipe(dest('dist/js/'))
+  }
+}
+
 function javascript() {
   return src(['src/js/*.js', 'src/vendor-js/*.js']).pipe(dest('dist/js/'))
 }
@@ -115,8 +131,10 @@ function cleanUp() {
   return src(['dist/js/*.js','dist/css/*.css','dist/*.html'], {read: false}).pipe(clean())
 }
 
-const allTasks = series(cleanUp, parallel(javascript, css, html))
+const allTasks = series(cleanUp, parallel(javascript, copyEnv, css, html))
 
-exports.default = function () {
+exports.dev = function () {
   watch(['src/css/*.css','src/js/*.js','src/templates/**/*.+(html|njk)', 'src/data/*.json'], { ignoreInitial: false }, allTasks)
 }
+
+exports.publish = allTasks

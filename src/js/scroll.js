@@ -1,4 +1,6 @@
-//Get the button:
+/**
+ * Depends on: jQuery
+ */
 const toTopButton = document.getElementById("to-top-button");
 const biggestTitleContainer = document.getElementById("headline-container");
 const biggestTitle = document.getElementById("biggest-title");
@@ -40,13 +42,13 @@ function topFunction() {
 }
 
 toTopButton.addEventListener("click", function (event) {
-  console.log('here')
+  // console.log('here')
   topFunction()
   event.preventDefault()
 })
 
 biggestTitle.addEventListener("click", function (event) {
-  console.log('here2')
+  // console.log('here2')
   topFunction()
   event.preventDefault()
 })

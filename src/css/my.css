@@ -91,3 +91,15 @@
     color: black;
     cursor: pointer;
 }
+
+.no-wrap-too-long {
+    overflow:hidden; 
+    text-overflow:ellipsis; 
+    white-space:nowrap; 
+}
+
+.gray-out {
+    -webkit-filter: grayscale(1); /* Webkit */
+    filter: gray; /* IE6-9 */
+    filter: grayscale(1); /* W3C */
+}
