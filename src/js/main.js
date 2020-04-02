@@ -130,7 +130,7 @@ function buildFeedModal(groupKey, feedItems) {
         
         elements.push(`
         <li class="list-group-item">
-          <a href="${feed.link}" target="_blank">${excerpt}</a>
+          <a href="https://vechainlinks.com/permalink/${feed.cryptoID}" target="_blank">${excerpt}</a>
           
           <div class="d-flex flex-row-reverse"><span class="text-muted">${displayDateString}</span></div>
         </li>`
