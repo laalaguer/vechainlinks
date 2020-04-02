@@ -109,6 +109,10 @@ function css() {
   return src(['src/css/*.css', 'src/vendor-css/*.css']).pipe(dest('dist/css/'))
 }
 
+function img() {
+  return src(['src/img/*.jpeg', 'src/img/*.png']).pipe(dest('dist/img/'))
+}
+
 // Render with nunjucks
 function html() {
   return src('src/templates/*.+(html|njk)')
@@ -131,10 +135,10 @@ function cleanUp() {
   return src(['dist/js/*.js','dist/css/*.css','dist/*.html'], {read: false}).pipe(clean())
 }
 
-const allTasks = series(cleanUp, parallel(javascript, copyEnv, css, html))
+const allTasks = series(cleanUp, parallel(javascript, copyEnv, css, html, img))
 
 exports.dev = function () {
-  watch(['src/css/*.css','src/js/*.js','src/templates/**/*.+(html|njk)', 'src/data/*.json'], { ignoreInitial: false }, allTasks)
+  watch(['src/css/*.css', 'src/js/*.js', 'src/templates/**/*.+(html|njk)', 'src/data/*.json', 'src/img/*.+(jpeg|jpg|png)'], { ignoreInitial: false }, allTasks)
 }
 
 exports.publish = allTasks
