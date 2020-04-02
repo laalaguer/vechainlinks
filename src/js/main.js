@@ -128,9 +128,10 @@ function buildFeedModal(groupKey, feedItems) {
         const truncatedTitle = feed.title.length > 120 ? feed.title.slice(0, 120) + ' ...' : feed.title
         const excerpt = truncatedTitle.length > 0 ? truncatedTitle : "[Nonverbal update, click to see more]"
         
+        // https://vechainlinks.com/permalink/${feed.cryptoID}
         elements.push(`
         <li class="list-group-item">
-          <a href="https://vechainlinks.com/permalink/${feed.cryptoID}" target="_blank">${excerpt}</a>
+          <a href="${feed.link}" target="_blank">${excerpt}</a>
           
           <div class="d-flex flex-row-reverse"><span class="text-muted">${displayDateString}</span></div>
         </li>`
