@@ -126,7 +126,7 @@ function buildFeedModal(groupKey, feedItems) {
         // displayDateString = new Date(feed.pubDate*1000).toLocaleDateString('en-GB', {year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit'})
         
         const truncatedTitle = feed.title.length > 120 ? feed.title.slice(0, 120) + ' ...' : feed.title
-        const excerpt = truncatedTitle.length > 0 ? truncatedTitle : "[Nonverbal update, click to see more]"
+        const excerpt = truncatedTitle.length > 0 ? truncatedTitle : "[Media post, click to view]"
         
         // https://vechainlinks.com/permalink/${feed.cryptoID}
         elements.push(`

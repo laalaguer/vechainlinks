@@ -5,18 +5,18 @@
         <div class="col-12 p-4 d-flex flex-column position-static">
             <div class="d-flex flex-row">
               <strong class="d-inline-block mb-2 text-capitalize mr-auto" style="color: {{item.platform | getBrandColor }}">{{item.platform}}</strong>
-              <div hidden id="bell-{{ (makeString(item.robot) + item.robot_params.join('')) | getHashID }}" 
-                style="cursor: pointer"
-                onclick="showFeedModal(this)"
-              >{{ mbell.bell(18) }}
+              <div id="bell-{{ (makeString(item.robot) + item.robot_params.join('')) | getHashID }}" onclick="showFeedModal(this)"
+                style="cursor: pointer; z-index: 98"
+                hidden
+              >{{ mbell.bell(1.5) }}
               </div>
             </div>
             <h3 class="mb-1">{{item.editor_title}}</h3>
             {% if item.job_status != null -%}
             <div class="mb-1 text-muted job-title">{{item.job_status | getJobStatusName }}</div>
             {%- endif %}
-            <p class="card-text mb-auto">{{item.editor_comments}}</p>
-            <a href="{{item.url}}" target="_blank">Continue reading</a>
+            <p class="card-text mb-auto" style="min-height:90px">{{item.editor_comments}}</p>
+            <a href="{{item.url}}" target="_blank" class="stretched-link">Continue reading</a>
         </div>
     </div>
 </div>
