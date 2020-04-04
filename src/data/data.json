@@ -585,7 +585,7 @@
             "job_status": null
         },
         {
-            "url": "env.vechain.org",
+            "url": "https://env.vechain.org",
             "category": "tools",
             "platform": "desktop",
             "robot": null,
