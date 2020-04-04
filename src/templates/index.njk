@@ -42,17 +42,18 @@
         <!-- Navbar -->
         <header class="py-2 border-bottom-light" id="headline-container">
           <div class="row flex-nowrap justify-content-between align-items-center">
-            <div class="d-none d-sm-block col-sm-2 col-md-4 col-lg-4 pt-1">
-              <a style="display: none;" class="btn btn-sm btn-outline-secondary text-muted" href="#" id="subscribe-email-button"><span class="d-block d-sm-none">&#9993;</span><span class="d-none d-sm-block">Subscribe Email</span></a>
+            <!-- visible (md and above, occupies 4), (xs to sm, occupies 0) -->
+            <div class="d-none d-md-block col-md-4 col-lg-4 pt-1">
             </div>
-            <div class="col-8 col-sm-8 col-md-4 col-lg-4 text-center">
-              <a class="blog-header-logo text-dark" href="#" id="biggest-title">VeChain<span class="text-muted">Links</span></a>
+            <!-- visible (md and above, occupies 4), (xs to sm, occupies 10) -->
+            <div class="col-10 d-md-block col-md-4 col-lg-4 text-center">
+              <a class="blog-header-logo text-dark d-flex justify-content-center align-items-center" href="#" id="biggest-title">
+                <span class="mr-1"><img src="img/vechainlinks.logo.only.png" id="biggest-logo" style="width:34px"></span>
+                <span class="ml-1">VeChain<span class="text-muted">Links</span></span>
+              </a>
             </div>
-            <div class="col-2 col-sm-2 col-md-4 col-lg-4 d-flex justify-content-end align-items-center">
-              {# <div class="custom-control custom-switch">
-                <input type="checkbox" class="custom-control-input " id="customSwitch1">
-                <label class="custom-control-label pt-1" for="customSwitch1"><span class="text-muted">Unread</span></label>
-              </div> #}
+            <!-- visible (md and above, occupies 4), (xs to sm, occupies 2) -->
+            <div class="col-2 col-md-4 col-lg-4 d-flex justify-content-end align-items-center">
               {{ mUnread.unreadButton("unreadButton", "btn-outline-secondary") }}
             </div>
           </div>
@@ -69,18 +70,18 @@
       </div>
 
       <!-- Introduction line -->
-      <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+      <div class="jumbotron p-4 p-md-5 rounded bg-light">
         <div class="col-md-8 px-0">
-          <h1 class="display-4 font-italic">Welcome to VeChain Links, one website to track 'em all</h1>
+          <h1 class="display-4 text-black">Welcome to VeChain<span class="text-muted">Links</span>, one website to track 'em all</h1>
           <p class="lead my-3"></p>
-          <p class="lead mb-0"><a href="#" class="btn btn-lg btn-outline-light font-weight-bold" id="subscribe-big-button"><span class="mr-2">&#9993;</span>Get free newsletters</a></p>
+          <p class="lead mb-0"><a href="#" class="btn btn-lg btn-outline-secondary font-weight-bold" id="subscribe-big-button"><span class="mr-2">&#9993;</span>Get free newsletters</a></p>
         </div>
       </div>
 
       <!-- Containers here, each container is a section of cards -->
       {% for categoryKey, categoryValue in categories -%}
       <main role="main" class="container">
-        <h3 class="pb-4 mb-4 font-italic border-bottom text-capitalize" id="{{categoryKey}}">
+        <h3 class="pb-4 mb-4 border-bottom text-capitalize" id="{{categoryKey}}">
             {{categoryValue.display}}
             <a class="my-anchor" href="#{{categoryKey}}" onclick="jumpToAnchor(this)">
                 <svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg>
@@ -104,7 +105,7 @@
     <div class="row">
       <div class="col-12 col-md">
         <div>
-          <img class="mb-2" src="img/vechainlinks.logo.with.text.png" alt="VeChain Links" height="72">
+          <img class="mb-2" src="img/vechainlinks.logo.only.png" alt="VeChain Links" height="48">
         </div>
         <div>
           <small class="d-block mb-3 text-muted">&copy; 2020</small>
@@ -118,17 +119,19 @@
         </ul>
       </div>
       <div class="col-6 col-md">
-        <h5>Contribution</h5>
+        <h5>Contribute</h5>
         <ul class="list-unstyled text-small">
           <li><a class="text-muted" href="https://github.com/laalaguer/vechainlinks">Github</a></li>
-          <li><a class="text-muted" href="mailto:admin@vechainlinks.com">Email To Us</a></li>
+          <li><a class="text-muted" href="mailto:admin@vechainlinks.com">Email Us</a></li>
         </ul>
       </div>
       <div class="col-6 col-md">
         <h5>Supporters</h5>
         <ul class="list-unstyled text-small">
           <li><a class="text-muted" href="//github.com/laalaguer/">A Byte Ahead</a></li>
-          <li><a class="text-muted" href="//vechain101.com">VeChain101</a></li>
+          <li><a class="text-muted" href="//vechain101.com">Ben Yorke</a></li>
+          <li><a class="text-muted" href="//github.com/XJWX89">XJWX89</a></li>
+          <li><a class="text-muted" href="//github.com/eiTT-01">eiTT-01</a></li>
         </ul>
       </div>
     </div>

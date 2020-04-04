@@ -62,16 +62,32 @@
             "display": "Mobile"
         }
     },
-    "robots": [
-        "reddit",
-        "medium",
-        "wordpress",
-        "twitter",
-        "weibo",
-        "githubrepo",
-        "githuborg",
-        "githubuser"
-    ],
+    "robots": {
+        "reddit": {
+            "display": "Reddit"
+        },
+        "medium": {
+            "display": "Medium"
+        },
+        "wordpress": {
+            "display": "Wordpress"
+        },
+        "twitter": {
+            "display": "Twitter"
+        },
+        "weibo": {
+            "display": "Weibo"
+        },
+        "githubrepo": {
+            "display": "Github Repo"
+        },
+        "githuborg": {
+            "display": "Github Organization"
+        },
+        "githubuser": {
+            "display": "Github User"
+        }
+    },
     "items": [
         {
             "url": "https://medium.com/@vechainofficial",
@@ -227,14 +243,14 @@
             "job_status": "vechain_team"
         },
         {
-            "url": "https://twitter.com/qian_bin_cola_t",
+            "url": "https://twitter.com/cola_tin",
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["qian_bin_cola_t"],
+            "robot_params": ["cola_tin"],
             "run_by_vechain": false,
             "organization": false,
-            "platform_identifier": "qian_bin_cola_t",
+            "platform_identifier": "cola_tin",
             "personal_account": true,
             "editor_title": "Qian Bin",
             "editor_comments": "Core VeChainThor blockchain dev.",

@@ -244,19 +244,35 @@ const guideModalID = 'guideModal'
 const guideCarouselID = 'guideCarousel'
 const guideCarouselNextButtonID = 'guideCarouselNextButton'
 
-$('#' + guideModalID).modal('show')
-
-function guideCarouselNext() {
-    $('#' + guideCarouselID).carousel('next')
+function syncGuideModalStatus() {
+    if (cookieDB.getKey(PREFERENCE_STORAGE, "oldVisitor")){
+        return;
+    } else {
+        $('#' + guideModalID).modal('show')
+        cookieDB.setKey(PREFERENCE_STORAGE, "oldVisitor", true)
+    }
 }
 
 $('#' + guideCarouselNextButtonID).click(function (){
-    guideCarouselNext()
+    $('#' + guideCarouselID).carousel('next')
 })
+
+function triggerEmailSubscribeIfUserBrowseLongEnough() {
+    setTimeout(function(){
+        if (cookieDB.getKey(PREFERENCE_STORAGE, "shownEmailBox")){
+            return;
+        } else {
+            $('#emailSubscribeModal').modal('show')
+            cookieDB.setKey(PREFERENCE_STORAGE, "shownEmailBox", true)
+        }
+    }, 1000 * 60)
+}
 
 $(document).ready(function(){
 
     run()
         .then(() => {console.log('init complete.');})
         .then(() => {syncUnreadButtonStatus(); console.log('sync unread button complete.'); })
+        .then(() => {syncGuideModalStatus(); console.log('Guide is shown or hide.')})
+        .then(() => { triggerEmailSubscribeIfUserBrowseLongEnough() })
 })
