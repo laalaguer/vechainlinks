@@ -110,7 +110,7 @@ function css() {
 }
 
 function img() {
-  return src(['src/img/*.jpeg', 'src/img/*.png']).pipe(dest('dist/img/'))
+  return src(['src/img/*.jpeg', 'src/img/*.png',  'src/img/*.webp']).pipe(dest('dist/img/'))
 }
 
 // Render with nunjucks

@@ -1,0 +1,23 @@
+{% macro subscribeModal(modalID, emailFieldID, emailSubmitButtonID, emailLabelID, emailSentTextID, formUserInputID, badMessageID, subscribeFooterID) %}
+<div class="modal fade" id="{{modalID}}" tabindex="-1" role="dialog" aria-labelledby="subscribeModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="mb-3">
+        <h5>Never missout updates from Medium, Twitter, Reddit, Github and more. Subscribe below.</h5>
+        </div>
+        <div class="form-group" id="{{formUserInputID}}">
+            <label for="{{emailFieldID}}" id="{{emailLabelID}}">Email address</label>
+            <input type="email" class="form-control" id="{{emailFieldID}}" aria-describedby="emailSubscribeInput">
+            <small id="emailSubscribeInput" class="form-text text-muted">Receive newsletters of VeChain and its community.</small>
+        </div>
+        <p id="{{emailSentTextID}}" class="d-none">Email is sent, check your mailbox (maybe spam folder). &#128054;</p>
+        <p id="{{badMessageID}}" class="d-none"></p>
+      </div>
+      <div class="modal-footer" id="{{subscribeFooterID}}">
+        <button type="button" class="btn btn-primary btn-sm" id="{{emailSubmitButtonID}}">Subscribe</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endmacro %}

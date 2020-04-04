@@ -2,7 +2,7 @@
 {% macro section(items, categoryKey) %}
 {% for item in items -%}
 {% if item.category == categoryKey -%}
-  {{ mcard.card(item) }}
+  {{ mcard.card(item, "col-lg-4 col-md-6 col-sm-6 col-xs-12") }}
 {%- endif %}
 {%- endfor %}
 {% endmacro %}

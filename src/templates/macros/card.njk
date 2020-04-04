@@ -1,6 +1,6 @@
 {% import 'macros/bell.njk' as mbell %}
-{% macro card(item) %}
-<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" id="{{ (item.url + editor_comments) | getHashID }}">
+{% macro card(item, styleCol) %}
+<div class="{{styleCol}} business-card" id="card-{{ (makeString(item.robot) + item.robot_params.join('')) | getHashID }}">
     <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col-12 p-4 d-flex flex-column position-static">
             <div class="d-flex flex-row">
@@ -8,7 +8,7 @@
               <div id="bell-{{ (makeString(item.robot) + item.robot_params.join('')) | getHashID }}" onclick="showFeedModal(this)"
                 style="cursor: pointer; z-index: 98"
                 hidden
-              >{{ mbell.bell(1.8) }}
+              >{{ mbell.bell(28) }}
               </div>
             </div>
             <h3 class="mb-1">{{item.editor_title}}</h3>

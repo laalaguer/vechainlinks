@@ -1,3 +1,9 @@
+const BELL_STORAGE = 'SILENT_BELLS'
+const PREFERENCE_STORAGE = 'PREFERENCE'
+const cookieDB = new CookieDB()
+// Unread Button
+const unreadButtonID = 'unreadButton'
+
 function getHashID(key) {
     return CryptoJS.SHA256(key).toString().slice(0,7)
 }
@@ -42,8 +48,7 @@ function showFeedModal(element){ // element = html element
     $('#' + modalID).modal('show')
 }
 
-const BELL_STORAGE = 'SILENT_BELLS'
-const cookieDB = new CookieDB()
+
 
 // {bell_id: last_silent_UTC_time_in_milliseconds}
 function getSilentBells() {
@@ -165,10 +170,10 @@ function buildFeedModal(groupKey, feedItems) {
      </div>
    </div>`
 
-   const modal_string = modal_html_part_1 + modal_string_middle + modal_string_part_2
+    const modal_string = modal_html_part_1 + modal_string_middle + modal_string_part_2
 
-//    console.log(modal_string)
-   const modal = $(modal_string)
+    // console.log(modal_string)
+    const modal = $(modal_string)
 
     modal.appendTo($("html, body"))
 }
@@ -182,20 +187,76 @@ async function fetchFeeds(endpoint, hours) {
     }
 }
 
+// Init the data and build the modals.
 async function run() {
     // Get Feeds
     const feedItems = await fetchFeeds(API_ENDPOINT, 48)
     // console.log('feeds:', feedItems.length)
 
+    // Mark Bells visible.
     markBellsVisibile(feedItems)
-    const groupedFeedItems = groupFeedItems(feedItems)
 
-    // console.log(groupedFeedItems)
+    // Build Feed Modals
+    const groupedFeedItems = groupFeedItems(feedItems)
     for (let key in groupedFeedItems) {
         buildFeedModal(key, groupedFeedItems[key])
     }
 }
 
+// flip the unread button,
+// change the preference in the storage.
+// filter out the cards on the webpage.
+function toggleUnreadButtonStatus(shouldUnread) {
+    if (shouldUnread) { // should filter out unread
+        $('#' + unreadButtonID).removeClass('btn-outline-secondary').addClass('btn-info')
+        cookieDB.setKey(PREFERENCE_STORAGE, "onlyUnread", true)
+        $('.business-card')
+            .filter(function(index, element) { // get those without bells.
+                const bell = element.children[0].children[0].children[0].children[1]
+                if (bell.hasAttribute('hidden')){
+                    return true;
+                } else {
+                    return false
+                }
+            }).addClass('d-none')
+    } else { // should not filter out any elements
+        $('#' + unreadButtonID).removeClass('btn-info').addClass('btn-outline-secondary')
+        cookieDB.setKey(PREFERENCE_STORAGE, "onlyUnread", false)
+        $('.business-card').removeClass('d-none')
+    }
+}
+
+// sync the unread button from the storage
+function syncUnreadButtonStatus() {
+    const shouldUnread = cookieDB.getKey(PREFERENCE_STORAGE, "onlyUnread")
+    toggleUnreadButtonStatus(shouldUnread)
+}
+
+$('#' + unreadButtonID).click(function (eventObject){
+    if (cookieDB.getKey(PREFERENCE_STORAGE, "onlyUnread")){
+        toggleUnreadButtonStatus(false)
+    } else {
+        toggleUnreadButtonStatus(true)
+    }
+})
+
+const guideModalID = 'guideModal'
+const guideCarouselID = 'guideCarousel'
+const guideCarouselNextButtonID = 'guideCarouselNextButton'
+
+$('#' + guideModalID).modal('show')
+
+function guideCarouselNext() {
+    $('#' + guideCarouselID).carousel('next')
+}
+
+$('#' + guideCarouselNextButtonID).click(function (){
+    guideCarouselNext()
+})
+
 $(document).ready(function(){
-    run().then(() => {console.log('init complete.')})
+
+    run()
+        .then(() => {console.log('init complete.');})
+        .then(() => {syncUnreadButtonStatus(); console.log('sync unread button complete.'); })
 })

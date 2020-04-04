@@ -1,4 +1,7 @@
 {% import 'macros/section.njk' as mSection %}
+{% import 'macros/subscribe.njk' as mSubscribe %}
+{% import 'macros/unread.njk' as mUnread %}
+{% import 'macros/guide.njk' as mGuide %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Free news, updates, projects, tools, explorers on VeChain Blockchain">
     <meta name="author" content="VeChain Community Members">
-    <title>VeChain Links</title>
+    <title>VeChain Links - Free news, announcements, posts, projects and code updates</title>
 
     <!-- rss -->
     <link rel="alternate" type="application/atom+xml" title="RSS Feed for vechainlinks.com" href="rss/" />
@@ -37,19 +40,20 @@
     <div class="container" id="my-body">
       <div id="sticky-header" class="sticky-top bg-white">
         <!-- Navbar -->
-        <header class="py-2 border-bottom-thick" id="headline-container">
+        <header class="py-2 border-bottom-light" id="headline-container">
           <div class="row flex-nowrap justify-content-between align-items-center">
-            <div class="col-1 col-sm-1 col-lg-4 pt-1">
-              <a class="btn btn-sm btn-outline-secondary" href="#" style="display:none;">Subscribe News Letter</a>
+            <div class="d-none d-sm-block col-sm-2 col-md-4 col-lg-4 pt-1">
+              <a style="display: none;" class="btn btn-sm btn-outline-secondary text-muted" href="#" id="subscribe-email-button"><span class="d-block d-sm-none">&#9993;</span><span class="d-none d-sm-block">Subscribe Email</span></a>
             </div>
-            <div class="col-10 col-sm-10 col-lg-4 text-center">
-              <a class="blog-header-logo text-dark" href="#" id="biggest-title">VeChain Links</a>
+            <div class="col-8 col-sm-8 col-md-4 col-lg-4 text-center">
+              <a class="blog-header-logo text-dark" href="#" id="biggest-title">VeChain<span class="text-muted">Links</span></a>
             </div>
-            <div class="col-1 col-sm-1 col-lg-4 d-flex justify-content-end align-items-center">
-              <a class="text-muted" href="#" aria-label="Search" style="display:none;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
-              </a>
-              <!-- <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a> -->
+            <div class="col-2 col-sm-2 col-md-4 col-lg-4 d-flex justify-content-end align-items-center">
+              {# <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input " id="customSwitch1">
+                <label class="custom-control-label pt-1" for="customSwitch1"><span class="text-muted">Unread</span></label>
+              </div> #}
+              {{ mUnread.unreadButton("unreadButton", "btn-outline-secondary") }}
             </div>
           </div>
         </header>
@@ -66,10 +70,10 @@
 
       <!-- Introduction line -->
       <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-        <div class="col-md-6 px-0">
-          <h1 class="display-4 font-italic">Links to interesting resources on VeChain.</h1>
+        <div class="col-md-8 px-0">
+          <h1 class="display-4 font-italic">Welcome to VeChain Links, one website to track 'em all</h1>
           <p class="lead my-3"></p>
-          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading below...</a></p>
+          <p class="lead mb-0"><a href="#" class="btn btn-lg btn-outline-light font-weight-bold" id="subscribe-big-button"><span class="mr-2">&#9993;</span>Get free newsletters</a></p>
         </div>
       </div>
 
@@ -89,7 +93,13 @@
       {%- endfor %}
     </div>
 
+    <!-- Guide Modal -->
+    {{ mGuide.guideModal("guideModal", "guideCarousel", "guideCarouselNextButton") }}
+    <!-- Subscribe Modal -->
+    {{ mSubscribe.subscribeModal("emailSubscribeModal", "userEmailInput", "emailSubmitButton", "emailLabel", "emailSentText", "formUserInput", "badMessage", "subscribeFooter") }}
+    <!-- To Top Button -->
     <button id="to-top-button" type="button" class="btn btn-outline-secondary rounded-circle p-0 hover-button">&#8593;<br>Top</button>
+    <!-- Footer -->
     <footer class="container pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
       <div class="col-12 col-md">
@@ -104,7 +114,7 @@
         <h5>Features</h5>
         <ul class="list-unstyled text-small">
           <li><a class="text-muted" href="rss/">RSS Reader</a></li>
-          <li><a class="text-muted" href="#">Email Newsletter</a></li>
+          <li><a class="text-muted" href="" id="subscribe-email-link" style="pointer: cursor;">Email Newsletter</a></li>
         </ul>
       </div>
       <div class="col-6 col-md">
@@ -122,7 +132,8 @@
         </ul>
       </div>
     </div>
-  </footer>
+    </footer>
+
   </body>
   <!-- Libraries -->
   <script src="js/jquery-3.4.1.min.js"></script>
@@ -134,5 +145,6 @@
   <script src="js/env.js"></script>
   <script src="js/cookie-db.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/subscribe.js"></script>
   <script src="js/scroll.js"></script>
 </html>

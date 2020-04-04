@@ -1,0 +1,84 @@
+{% import 'macros/bell.njk' as mbell %}
+{% import 'macros/unread.njk' as mUnread %}
+{% macro guideModal(guideModalID, guideCarouselID, guideCarouselNextButtonID) %}
+<div class="modal fade" data-backdrop="static" id="{{guideModalID}}" tabindex="-1" role="dialog" aria-labelledby="subscribeModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="mb-4">
+        </div>
+        <div id="{{guideCarouselID}}" class="carousel slide" data-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4 pt-1"><img src="img/medium.logo.png" style="max-width:100px"></div>
+                            <div class="col-4"><img src="img/reddit.logo.png" style="max-width:100px"></div>
+                            <div class="col-4"><img src="img/github.logo.png" style="max-width:100px"></div>
+                            <div class="col-4 mt-3"><img src="img/twitter.logo.png" style="max-width:100px"></div>
+                            <div class="col-4"><img src="img/weibo.logo.webp" style="max-width:100px"></div>
+                            <div class="col-4 mt-3"><img src="img/wordpress.logo.png" style="max-width:120px"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mt-3 text-center">
+                                <p class="text-secondary mb-0">We collect news, announcements, posts, projects updates from over 90 different channels in VeChain Community, <strong>Everyday</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-3"></div>
+                            <div class="col-2 gray-out">{{ mbell.bell(24)}}</div>
+                            <div class="col-2 gray-out"><strong>&#8594;</strong></div>
+                            <div class="col-2">{{ mbell.bell(24)}}</div>
+                            <div class="col-3"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mt-3 text-center">
+                                <p class="text-secondary mb-0">The card rings a bell when there are <strong>new updates</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container" >
+                        <div class="row text-center">
+                            <div class="col-2"></div>
+                            <div class="col-3 mt-3">{{mUnread.unreadButton('guideUnreadButton', 'btn-outline-secondary')}}</div>
+                            <div class="col-2 gray-out mt-3"><strong>&#8594;</strong></div>
+                            <div class="col-3 mt-3">{{mUnread.unreadButton('guideUnreadButton', 'btn-info')}}</div>
+                            <div class="col-2"></div>
+                        </div>
+                        <div class="row">
+                        <div class="col-12 mt-3 text-center">
+                            <p class="text-secondary mb-0">View only <strong>updated</strong> channels by turning on the switch.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container" >
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <p class="text-secondary">You are all set! Click "dismiss" to start browsing!</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mt-1 text-center">
+                                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Dismiss</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer" id="{{subscribeFooterID}}">
+        <button type="button" class="btn btn-primary btn-sm" id="{{guideCarouselNextButtonID}}">Next ></button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endmacro %}
