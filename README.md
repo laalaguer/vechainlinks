@@ -82,27 +82,9 @@ https://github.com/vechain/thor/tags.atom
 https://github.com/vechain/thor/commits/master.atom
 https://github.com/vechain/thor/commits.atom
 
-We will output feeds with Atom-1.0 style, hash something so we get `<id>` of the feed.
+We output feeds with Atom-1.0 style。
 
-```
-request
 
-[
-    {
-        channel_type: "reddit", "medium", "wordpress", "twitter", "weibo", "github_repo", "github_project",
-        args: {}
-    }
-]
-
-response
-
-[
-    {
-        simplified_rss
-    }
-]
-
-```
 Target #2:
 - A Dynamic frontend to display Feeds (excerpt)
 - The frontend should be fully static (many data rendered beforehand)
@@ -110,17 +92,17 @@ Target #2:
 - Use a simple package manager to automate the build process.
 
 Result:
-- [] A backend, to collect feeds on different platforms, and turning into RSS.
-- [] A simple, dynamic website frontend, to poll RSS feed and display.
-- [] 20 users to comment about the website.
-- [] Open for public members to contribute.
+- [x] A backend, to collect feeds on different platforms, and turning into RSS.
+- [x] A simple, dynamic website frontend, to poll RSS feed and display.
+-  20 users to comment about the website.
+- [x] Open for public members to contribute.
 
 ## Milestone #3: Subscribe and Analyze
 
 - [x] Google Analytics
-- [] Email Subscribers
+- [x] Email Subscribers
 - [] Get first 50 users on board.
-- [] Email Centre = https://subscribe.vechainlinks.com/?redirect=url
+- [x] Email Centre
 
 
 ### Honorable Mentions
