@@ -47,12 +47,15 @@ function scrollFunction() {
   biggestTitle.style['font-size'] = adjustFontSize(scrolledPx)
   // adjust the logo size.
   biggestLogo.style['width'] = adjustLogoSize(scrolledPx)
+
+  // always display hover button.
+  toTopButton.style.display = "block";
   // hide/display to-top button
-  if (scrolledPx > 500) {
-    toTopButton.style.display = "block";
-  } else {
-    toTopButton.style.display = "none";
-  }
+  // if (scrolledPx > 500) {
+  //   toTopButton.style.display = "block";
+  // } else {
+  //   toTopButton.style.display = "none";
+  // }
 }
 
 // When the user clicks on the to-top button, scroll to the top of the document

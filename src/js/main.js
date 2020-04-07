@@ -257,16 +257,16 @@ $('#' + guideCarouselNextButtonID).click(function (){
     $('#' + guideCarouselID).carousel('next')
 })
 
-function triggerEmailSubscribeIfUserBrowseLongEnough() {
-    setTimeout(function(){
-        if (frontendStorageDB.getKey(PREFERENCE_STORAGE, "shownEmailBox")){
-            return;
-        } else {
-            $('#emailSubscribeModal').modal('show')
-            frontendStorageDB.setKey(PREFERENCE_STORAGE, "shownEmailBox", true)
-        }
-    }, 1000 * 60)
-}
+// function triggerEmailSubscribeIfUserBrowseLongEnough() {
+//     setTimeout(function(){
+//         if (frontendStorageDB.getKey(PREFERENCE_STORAGE, "shownEmailBox")){
+//             return;
+//         } else {
+//             $('#emailSubscribeModal').modal('show')
+//             frontendStorageDB.setKey(PREFERENCE_STORAGE, "shownEmailBox", true)
+//         }
+//     }, 1000 * 60)
+// }
 
 $(document).ready(function(){
 
@@ -274,5 +274,5 @@ $(document).ready(function(){
         .then(() => {console.log('init complete.');})
         .then(() => {syncUnreadButtonStatus(); console.log('sync unread button complete.'); })
         .then(() => {syncGuideModalStatus(); console.log('Guide is shown or hide.')})
-        .then(() => { triggerEmailSubscribeIfUserBrowseLongEnough() })
+        // .then(() => { triggerEmailSubscribeIfUserBrowseLongEnough() })
 })
