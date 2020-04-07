@@ -96,10 +96,22 @@
 
     <!-- Guide Modal -->
     {{ mGuide.guideModal("guideModal", "guideCarousel", "guideCarouselNextButton") }}
+    
     <!-- Subscribe Modal -->
     {{ mSubscribe.subscribeModal("emailSubscribeModal", "userEmailInput", "emailSubmitButton", "emailLabel", "emailSentText", "formUserInput", "badMessage", "subscribeFooter") }}
+    
     <!-- To Top Button -->
     <button id="to-top-button" type="button" class="btn btn-secondary rounded-circle p-0 hover-button">&#8593;</button>
+    
+    <!-- Navigator on the right -->
+    <ul class="list-group hover-menu">
+      {% for key, value in categories %}
+      <li class="list-group-item">
+        <a class="p-2 text-muted text-capitalize" href="#{{ key }}" id="menu-{{ key }}" onclick="jumpToAnchor(this)">{{ value["display"] }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    
     <!-- Footer -->
     <footer class="container pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">

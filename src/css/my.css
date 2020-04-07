@@ -55,6 +55,49 @@
     }
 }
 
+.hover-menu {
+    display: block;
+    /*display: none;  hide display on naturally */
+    font-size: 14px;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 240px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer;
+}
+
+/* very small screens */
+@media (max-width: 768px) {
+    .hover-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .hover-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .hover-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .hover-menu {
+        display: none;
+        right: 90px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .hover-menu {
+        right: 260px;
+    }
+}
+
 
 .job-title {
     font-size: small;
