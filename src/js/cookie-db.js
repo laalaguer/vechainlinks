@@ -6,7 +6,6 @@
  * 
  * db.hasTable(tableName)           - Check if table exists.
  * db.createTable(tableName)        - Create a table. If table exist, don't create.
- * 
  * db.getTable(tableName)           - Return a table as {key:value, key:value}, if not found return {}
  * db.dropTable(tableName)          - Delete a table.
  * 
@@ -28,7 +27,7 @@ function CookieDB() {
  */
 CookieDB.prototype.hasTable = function (tableName) {
     const t = Cookies.get(tableName)
-    if (t) { return true } else { return false}
+    if (t) { return true } else { return false }
 }
 
 /**

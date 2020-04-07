@@ -1,6 +1,6 @@
 const BELL_STORAGE = 'SILENT_BELLS'
 const PREFERENCE_STORAGE = 'PREFERENCE'
-const cookieDB = new CookieDB()
+const frontendStorageDB = new StorageDB()
 // Unread Button
 const unreadButtonID = 'unreadButton'
 
@@ -52,19 +52,19 @@ function showFeedModal(element){ // element = html element
 
 // {bell_id: last_silent_UTC_time_in_milliseconds}
 function getSilentBells() {
-    return cookieDB.getTable(BELL_STORAGE)
+    return frontendStorageDB.getTable(BELL_STORAGE)
 }
 
 function getBellSilent(bellID) {
-    return cookieDB.getKey(BELL_STORAGE, bellID)
+    return frontendStorageDB.getKey(BELL_STORAGE, bellID)
 }
 
 function removeSilentBell(bellID) {
-    cookieDB.removeKey(BELL_STORAGE, bellID)
+    frontendStorageDB.removeKey(BELL_STORAGE, bellID)
 }
 
 function writeToSilentBells(bellID) {
-    cookieDB.setKey(BELL_STORAGE, bellID, Date.now())
+    frontendStorageDB.setKey(BELL_STORAGE, bellID, Date.now())
 }
 
 function markBellsVisibile(feedItems) {
@@ -209,7 +209,7 @@ async function run() {
 function toggleUnreadButtonStatus(shouldUnread) {
     if (shouldUnread) { // should filter out unread
         $('#' + unreadButtonID).removeClass('btn-outline-secondary').addClass('btn-info')
-        cookieDB.setKey(PREFERENCE_STORAGE, "onlyUnread", true)
+        frontendStorageDB.setKey(PREFERENCE_STORAGE, "onlyUnread", true)
         $('.business-card')
             .filter(function(index, element) { // get those without bells.
                 const bell = element.children[0].children[0].children[0].children[1]
@@ -221,19 +221,19 @@ function toggleUnreadButtonStatus(shouldUnread) {
             }).addClass('d-none')
     } else { // should not filter out any elements
         $('#' + unreadButtonID).removeClass('btn-info').addClass('btn-outline-secondary')
-        cookieDB.setKey(PREFERENCE_STORAGE, "onlyUnread", false)
+        frontendStorageDB.setKey(PREFERENCE_STORAGE, "onlyUnread", false)
         $('.business-card').removeClass('d-none')
     }
 }
 
 // sync the unread button from the storage
 function syncUnreadButtonStatus() {
-    const shouldUnread = cookieDB.getKey(PREFERENCE_STORAGE, "onlyUnread")
+    const shouldUnread = frontendStorageDB.getKey(PREFERENCE_STORAGE, "onlyUnread")
     toggleUnreadButtonStatus(shouldUnread)
 }
 
 $('#' + unreadButtonID).click(function (eventObject){
-    if (cookieDB.getKey(PREFERENCE_STORAGE, "onlyUnread")){
+    if (frontendStorageDB.getKey(PREFERENCE_STORAGE, "onlyUnread")){
         toggleUnreadButtonStatus(false)
     } else {
         toggleUnreadButtonStatus(true)
@@ -245,11 +245,11 @@ const guideCarouselID = 'guideCarousel'
 const guideCarouselNextButtonID = 'guideCarouselNextButton'
 
 function syncGuideModalStatus() {
-    if (cookieDB.getKey(PREFERENCE_STORAGE, "oldVisitor")){
+    if (frontendStorageDB.getKey(PREFERENCE_STORAGE, "oldVisitor")){
         return;
     } else {
         $('#' + guideModalID).modal('show')
-        cookieDB.setKey(PREFERENCE_STORAGE, "oldVisitor", true)
+        frontendStorageDB.setKey(PREFERENCE_STORAGE, "oldVisitor", true)
     }
 }
 
@@ -259,11 +259,11 @@ $('#' + guideCarouselNextButtonID).click(function (){
 
 function triggerEmailSubscribeIfUserBrowseLongEnough() {
     setTimeout(function(){
-        if (cookieDB.getKey(PREFERENCE_STORAGE, "shownEmailBox")){
+        if (frontendStorageDB.getKey(PREFERENCE_STORAGE, "shownEmailBox")){
             return;
         } else {
             $('#emailSubscribeModal').modal('show')
-            cookieDB.setKey(PREFERENCE_STORAGE, "shownEmailBox", true)
+            frontendStorageDB.setKey(PREFERENCE_STORAGE, "shownEmailBox", true)
         }
     }, 1000 * 60)
 }
