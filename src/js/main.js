@@ -133,7 +133,6 @@ function buildFeedModal(groupKey, feedItems) {
         const truncatedTitle = feed.title.length > 120 ? feed.title.slice(0, 120) + ' ...' : feed.title
         const excerpt = truncatedTitle.length > 0 ? truncatedTitle : "[Media post, click to view]"
         
-        // https://vechainlinks.com/permalink/${feed.cryptoID}
         elements.push(`
         <li class="list-group-item">
           <a href="${feed.link}" target="_blank">${excerpt}</a>
@@ -273,6 +272,6 @@ $(document).ready(function(){
     run()
         .then(() => {console.log('init complete.');})
         .then(() => {syncUnreadButtonStatus(); console.log('sync unread button complete.'); })
-        .then(() => {syncGuideModalStatus(); console.log('Guide is shown or hide.')})
+        // .then(() => {syncGuideModalStatus(); console.log('Guide is shown or hide.')})
         // .then(() => { triggerEmailSubscribeIfUserBrowseLongEnough() })
 })

@@ -86,7 +86,6 @@ $('#subscribe-big-button').click(function (eventObject) {
 // Once click, verify the email address and submit/show error.
 $('#' + emailSubmitButtonID).click(function (eventObject) {
     eventObject.preventDefault();
-
     // console.log(eventObject)
     const userEmail = $('#' + userEmailInputID).val()
     if (!userEmail.match(EMAIL_REGEX)) {
@@ -98,7 +97,6 @@ $('#' + emailSubmitButtonID).click(function (eventObject) {
         trySubscribe(userEmail, API_ENDPOINT)
     }
 
-    
 })
 
 // Turn email input box back to normal once user is typing.

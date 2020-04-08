@@ -1035,6 +1035,23 @@
             "job_status": null
         },
         {
+            "url": "https://wordpress.org/plugins/thorcommerce/",
+            "category": "tools",
+            "platform": "desktop",
+            "robot": null,
+            "robot_params": [],
+            "run_by_vechain": false,
+            "organization": false,
+            "platform_identifier": null,
+            "personal_account": true,
+            "editor_title": "Thor Commerce Plugin",
+            "editor_comments": "Woocommerce/Wordpress plugin that allows online shops to accept VET.",
+            "editor_languages": [
+                "english"
+            ],
+            "job_status": null
+        },
+        {
             "url": "https://connex.vexchange.io/",
             "category": "tools",
             "platform": "desktop",
