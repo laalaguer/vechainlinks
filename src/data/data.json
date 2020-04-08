@@ -551,6 +551,108 @@
             "job_status": null
         },
         {
+            "url": "https://twitter.com/veriartivra",
+            "category": "people",
+            "platform": "twitter",
+            "robot": "twitter",
+            "robot_params": ["veriartivra"],
+            "run_by_vechain": false,
+            "organization": true,
+            "platform_identifier": "veriartivra",
+            "personal_account": false,
+            "editor_title": "Jamie - Veriarti",
+            "editor_comments": "NFT gaming and artwork on the blockchain.",
+            "editor_languages": [
+                "english"
+            ],
+            "job_status": null
+        },
+        {
+            "url": "https://twitter.com/JurProject",
+            "category": "people",
+            "platform": "twitter",
+            "robot": "twitter",
+            "robot_params": ["JurProject"],
+            "run_by_vechain": false,
+            "organization": true,
+            "platform_identifier": "JurProject",
+            "personal_account": false,
+            "editor_title": "Jur",
+            "editor_comments": "Decentralized Legal Ecosystem.",
+            "editor_languages": [
+                "english"
+            ],
+            "job_status": null
+        },
+        {
+            "url": "https://twitter.com/HackenAI",
+            "category": "people",
+            "platform": "twitter",
+            "robot": "twitter",
+            "robot_params": ["HackenAI"],
+            "run_by_vechain": false,
+            "organization": true,
+            "platform_identifier": "HackenAI",
+            "personal_account": false,
+            "editor_title": "HackenAI",
+            "editor_comments": "A personalized cybersecurity app.",
+            "editor_languages": [
+                "english"
+            ],
+            "job_status": null
+        },
+        {
+            "url": "https://twitter.com/8Hours_Official",
+            "category": "people",
+            "platform": "twitter",
+            "robot": "twitter",
+            "robot_params": ["8Hours_Official"],
+            "run_by_vechain": false,
+            "organization": true,
+            "platform_identifier": "8Hours_Official",
+            "personal_account": false,
+            "editor_title": "8 Hours",
+            "editor_comments": "A NFT and tabletop gaming platform.",
+            "editor_languages": [
+                "english"
+            ],
+            "job_status": null
+        },
+        {
+            "url": "https://twitter.com/LoginoD",
+            "category": "people",
+            "platform": "twitter",
+            "robot": "twitter",
+            "robot_params": ["LoginoD"],
+            "run_by_vechain": false,
+            "organization": false,
+            "platform_identifier": "LoginoD",
+            "personal_account": false,
+            "editor_title": "Logino",
+            "editor_comments": "Safe Haven and SafeTech CEO.",
+            "editor_languages": [
+                "english"
+            ],
+            "job_status": null
+        },
+        {
+            "url": "https://twitter.com/OceanexOfficial",
+            "category": "people",
+            "platform": "twitter",
+            "robot": "twitter",
+            "robot_params": ["OceanexOfficial"],
+            "run_by_vechain": false,
+            "organization": true,
+            "platform_identifier": "OceanexOfficial",
+            "personal_account": false,
+            "editor_title": "OceanEx",
+            "editor_comments": "The official Twitter of th OceanEx digital asset exchange.",
+            "editor_languages": [
+                "english"
+            ],
+            "job_status": null
+        },
+        {
             "url": "https://www.reddit.com/r/Vechain/",
             "category": "media",
             "platform": "reddit",
