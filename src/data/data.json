@@ -483,6 +483,23 @@
             "job_status": "third_party"
         },
         {
+            "url": "https://twitter.com/itemsdapp",
+            "category": "people",
+            "platform": "twitter",
+            "robot": "twitter",
+            "robot_params": ["itemsdapp"],
+            "run_by_vechain": false,
+            "organization": false,
+            "platform_identifier": "itemsdapp",
+            "personal_account": true,
+            "editor_title": "Real Items",
+            "editor_comments": "Authenticity as a Platform service powered by VeChain.",
+            "editor_languages": [
+                "english"
+            ],
+            "job_status": "third_party"
+        },
+        {
             "url": "https://twitter.com/d_inderias",
             "category": "people",
             "platform": "twitter",
