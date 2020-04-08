@@ -35,7 +35,7 @@ function markElementVisibility(idOfElement, visible = true) {
     if (visible) {
         element.removeAttribute('hidden')
         if (guideOfBellCount == 0){
-            element.parentElement.parentElement.parentElement.parentElement.setAttribute('data-intro', 'Card will lead to the news source.')
+            element.parentElement.parentElement.parentElement.parentElement.setAttribute('data-intro', 'Tools? Projects? Tweets? You can track them all.')
             element.setAttribute('data-step', '3')
 
             element.setAttribute('data-intro', 'Click the bell to see new updates.')
@@ -267,6 +267,7 @@ $('#' + 'user-guide-link').click(function(eventObject) {
 })
 
 const getStartedButtonID = 'getStartedButton'
+const welcomeDoneModalID = 'welcomeDoneModal'
 
 $('#' + getStartedButtonID).click(function(){
     introJs()
@@ -275,6 +276,11 @@ $('#' + getStartedButtonID).click(function(){
     .setOption("showBullets", false)
     .setOption("scrollToElement", true)
     .setOption("exitOnOverlayClick", false)
+    .setOption("exitOnEsc", false)
+    .setOption("disableInteraction", true)
+    .oncomplete(function(){
+        $('#' + welcomeDoneModalID).modal('show')
+    })
     .start(); 
 })
 

@@ -3,6 +3,7 @@
 {% import 'macros/unread.njk' as mUnread %}
 {# {% import 'macros/guide.njk' as mGuide %} #}
 {% import 'macros/welcome.njk' as mWelcome %}
+{% import 'macros/welcomedone.njk' as mWelcomeDone %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -63,7 +64,7 @@
         </header>
 
         <!-- Category line -->
-        <div class="nav-scroller pt-2 mb-2 border-bottom-light" data-intro="Navigate to different sections." data-step="1">
+        <div class="nav-scroller pt-2 mb-2 border-bottom-light" data-intro="Click to navigate to different sections." data-step="1">
           <nav class="nav d-flex justify-content-between" id="category-section">
           {% for key, value in categories %}
           <a class="p-2 text-muted text-capitalize" href="#{{ key }}" id="menu-{{ key }}" onclick="jumpToAnchor(this)">{{ value["display"] }}</a>
@@ -101,6 +102,8 @@
     {# {{ mGuide.guideModal("guideModal", "guideCarousel", "guideCarouselNextButton") }} #}
 
     {{mWelcome.welcomeModal("welcomeModal")}}
+
+    {{mWelcomeDone.modal("welcomeDoneModal")}}}}
 
     <!-- Subscribe Modal -->
     {{ mSubscribe.subscribeModal("emailSubscribeModal", "userEmailInput", "emailSubmitButton", "emailLabel", "emailSentText", "formUserInput", "badMessage", "subscribeFooter") }}
