@@ -15,7 +15,7 @@
             {% if item.job_status != null -%}
             <div class="mb-1 text-muted job-title">{{item.job_status | getJobStatusName }}</div>
             {%- endif %}
-            <p class="card-text mb-auto" style="min-height:90px">{{item.editor_comments}}</p>
+            <p class="card-text mb-auto font-weight-light" style="min-height:90px">{{item.editor_comments}}</p>
             <a href="{{item.url}}" target="_blank" class="stretched-link">Continue reading</a>
         </div>
     </div>

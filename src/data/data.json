@@ -94,7 +94,9 @@
             "category": "media",
             "platform": "medium",
             "robot": "reddit",
-            "robot_params": ["vechainofficial"],
+            "robot_params": [
+                "vechainofficial"
+            ],
             "run_by_vechain": true,
             "organization": true,
             "platform_identifier": "vechainofficial",
@@ -111,7 +113,9 @@
             "category": "media",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["vechainofficial"],
+            "robot_params": [
+                "vechainofficial"
+            ],
             "run_by_vechain": true,
             "organization": true,
             "platform_identifier": "vechainofficial",
@@ -128,7 +132,9 @@
             "category": "media",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["vechaindev"],
+            "robot_params": [
+                "vechaindev"
+            ],
             "run_by_vechain": true,
             "organization": true,
             "platform_identifier": "vechaindev",
@@ -145,7 +151,9 @@
             "category": "media",
             "platform": "weibo",
             "robot": "weibo",
-            "robot_params": ["6353774918"],
+            "robot_params": [
+                "6353774918"
+            ],
             "run_by_vechain": true,
             "organization": true,
             "platform_identifier": "6353774918",
@@ -162,7 +170,9 @@
             "category": "media",
             "platform": "weibo",
             "robot": "weibo",
-            "robot_params": ["6306565418"],
+            "robot_params": [
+                "6306565418"
+            ],
             "run_by_vechain": false,
             "organization": true,
             "platform_identifier": "6306565418",
@@ -196,7 +206,10 @@
             "category": "websites",
             "platform": "website",
             "robot": "wordpress",
-            "robot_params": ["https", "vechain101.com"],
+            "robot_params": [
+                "https",
+                "vechain101.com"
+            ],
             "run_by_vechain": false,
             "organization": true,
             "platform_identifier": null,
@@ -213,7 +226,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["sunshinelu24"],
+            "robot_params": [
+                "sunshinelu24"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "sunshinelu24",
@@ -230,7 +245,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["kfeng027"],
+            "robot_params": [
+                "kfeng027"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "kfeng027",
@@ -247,7 +264,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["cola_tin"],
+            "robot_params": [
+                "cola_tin"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "cola_tin",
@@ -264,7 +283,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["Sarah_Nabaa"],
+            "robot_params": [
+                "Sarah_Nabaa"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "Sarah_Nabaa",
@@ -281,7 +302,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["jasonrockwood"],
+            "robot_params": [
+                "jasonrockwood"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "jasonrockwood",
@@ -298,7 +321,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["jeromegrilleres"],
+            "robot_params": [
+                "jeromegrilleres"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "jeromegrilleres",
@@ -315,7 +340,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["liboliqi"],
+            "robot_params": [
+                "liboliqi"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "liboliqi",
@@ -332,7 +359,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["PeterZh47977516"],
+            "robot_params": [
+                "PeterZh47977516"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "PeterZh47977516",
@@ -349,7 +378,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["abyteahead"],
+            "robot_params": [
+                "abyteahead"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "abyteahead",
@@ -366,7 +397,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["BenYorke"],
+            "robot_params": [
+                "BenYorke"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "BenYorke",
@@ -383,7 +416,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["tahpot"],
+            "robot_params": [
+                "tahpot"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "tahpot",
@@ -400,7 +435,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["Raleigh_CA"],
+            "robot_params": [
+                "Raleigh_CA"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "Raleigh_CA",
@@ -412,13 +449,14 @@
             ],
             "job_status": "community_member"
         },
-        
         {
             "url": "https://twitter.com/rgrottola",
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["rgrottola"],
+            "robot_params": [
+                "rgrottola"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "rgrottola",
@@ -430,13 +468,14 @@
             ],
             "job_status": "third_party"
         },
-        
         {
             "url": "https://twitter.com/creamethod",
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["creamethod"],
+            "robot_params": [
+                "creamethod"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "creamethod",
@@ -453,7 +492,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["MiRei83_"],
+            "robot_params": [
+                "MiRei83_"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "MiRei83_",
@@ -470,7 +511,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["veriartivra"],
+            "robot_params": [
+                "veriartivra"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "veriartivra",
@@ -487,7 +530,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["itemsdapp"],
+            "robot_params": [
+                "itemsdapp"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "itemsdapp",
@@ -504,7 +549,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["d_inderias"],
+            "robot_params": [
+                "d_inderias"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "d_inderias",
@@ -521,7 +568,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["VeChainStats"],
+            "robot_params": [
+                "VeChainStats"
+            ],
             "run_by_vechain": false,
             "organization": true,
             "platform_identifier": "VeChainStats",
@@ -538,7 +587,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["VechainThorCom"],
+            "robot_params": [
+                "VechainThorCom"
+            ],
             "run_by_vechain": false,
             "organization": true,
             "platform_identifier": "VechainThorCom",
@@ -555,7 +606,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["vechainthorscan"],
+            "robot_params": [
+                "vechainthorscan"
+            ],
             "run_by_vechain": false,
             "organization": true,
             "platform_identifier": "vechainthorscan",
@@ -572,7 +625,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["veriartivra"],
+            "robot_params": [
+                "veriartivra"
+            ],
             "run_by_vechain": false,
             "organization": true,
             "platform_identifier": "veriartivra",
@@ -589,7 +644,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["JurProject"],
+            "robot_params": [
+                "JurProject"
+            ],
             "run_by_vechain": false,
             "organization": true,
             "platform_identifier": "JurProject",
@@ -606,7 +663,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["HackenAI"],
+            "robot_params": [
+                "HackenAI"
+            ],
             "run_by_vechain": false,
             "organization": true,
             "platform_identifier": "HackenAI",
@@ -623,7 +682,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["8Hours_Official"],
+            "robot_params": [
+                "8Hours_Official"
+            ],
             "run_by_vechain": false,
             "organization": true,
             "platform_identifier": "8Hours_Official",
@@ -640,7 +701,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["LoginoD"],
+            "robot_params": [
+                "LoginoD"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "LoginoD",
@@ -657,7 +720,9 @@
             "category": "people",
             "platform": "twitter",
             "robot": "twitter",
-            "robot_params": ["OceanexOfficial"],
+            "robot_params": [
+                "OceanexOfficial"
+            ],
             "run_by_vechain": false,
             "organization": true,
             "platform_identifier": "OceanexOfficial",
@@ -674,7 +739,9 @@
             "category": "media",
             "platform": "reddit",
             "robot": "reddit",
-            "robot_params": ["Vechain"],
+            "robot_params": [
+                "Vechain"
+            ],
             "run_by_vechain": true,
             "organization": true,
             "platform_identifier": "Vechain",
@@ -691,7 +758,9 @@
             "category": "media",
             "platform": "reddit",
             "robot": "reddit",
-            "robot_params": ["VechainTrader"],
+            "robot_params": [
+                "VechainTrader"
+            ],
             "run_by_vechain": true,
             "organization": true,
             "platform_identifier": "VechainTrader",
@@ -830,7 +899,10 @@
             "category": "websites",
             "platform": "website",
             "robot": "wordpress",
-            "robot_params": ["https", "vechaininsider.com"],
+            "robot_params": [
+                "https",
+                "vechaininsider.com"
+            ],
             "run_by_vechain": false,
             "organization": true,
             "platform_identifier": null,
@@ -983,7 +1055,9 @@
             "category": "code",
             "platform": "github",
             "robot": "githuborg",
-            "robot_params": ["vechain"],
+            "robot_params": [
+                "vechain"
+            ],
             "run_by_vechain": true,
             "organization": true,
             "platform_identifier": null,
@@ -1000,7 +1074,10 @@
             "category": "code",
             "platform": "github",
             "robot": "githubrepo",
-            "robot_params": ["vechain", "token-registry"],
+            "robot_params": [
+                "vechain",
+                "token-registry"
+            ],
             "run_by_vechain": true,
             "organization": true,
             "platform_identifier": null,
@@ -1017,7 +1094,10 @@
             "category": "code",
             "platform": "github",
             "robot": "githubrepo",
-            "robot_params": ["vechain", "app-hub"],
+            "robot_params": [
+                "vechain",
+                "app-hub"
+            ],
             "run_by_vechain": true,
             "organization": true,
             "platform_identifier": null,
@@ -1034,7 +1114,10 @@
             "category": "code",
             "platform": "github",
             "robot": "githubrepo",
-            "robot_params": ["vechain", "thor-devkit.js"],
+            "robot_params": [
+                "vechain",
+                "thor-devkit.js"
+            ],
             "run_by_vechain": true,
             "organization": true,
             "platform_identifier": null,
@@ -1296,7 +1379,10 @@
             "category": "docs",
             "platform": "github",
             "robot": "githubrepo",
-            "robot_params": ["vechain", "vips"],
+            "robot_params": [
+                "vechain",
+                "vips"
+            ],
             "run_by_vechain": true,
             "organization": true,
             "platform_identifier": null,
@@ -1313,7 +1399,9 @@
             "category": "docs",
             "platform": "medium",
             "robot": "medium",
-            "robot_params": ["abyteahead"],
+            "robot_params": [
+                "abyteahead"
+            ],
             "run_by_vechain": false,
             "organization": false,
             "platform_identifier": "abyteahead",
@@ -1503,7 +1591,10 @@
             "category": "code",
             "platform": "github",
             "robot": "githubrepo",
-            "robot_params": ["vechain", "picasso"],
+            "robot_params": [
+                "vechain",
+                "picasso"
+            ],
             "run_by_vechain": true,
             "organization": true,
             "platform_identifier": null,
@@ -1520,7 +1611,10 @@
             "category": "code",
             "platform": "github",
             "robot": "githubrepo",
-            "robot_params": ["vechain", "wallet-Android-sdk"],
+            "robot_params": [
+                "vechain",
+                "wallet-Android-sdk"
+            ],
             "run_by_vechain": true,
             "organization": true,
             "platform_identifier": null,
@@ -1537,7 +1631,10 @@
             "category": "code",
             "platform": "github",
             "robot": "githubrepo",
-            "robot_params": ["vechain", "wallet-iOS-sdk"],
+            "robot_params": [
+                "vechain",
+                "wallet-iOS-sdk"
+            ],
             "run_by_vechain": true,
             "organization": true,
             "platform_identifier": null,

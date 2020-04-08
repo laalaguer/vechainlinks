@@ -1,7 +1,8 @@
 {% import 'macros/section.njk' as mSection %}
 {% import 'macros/subscribe.njk' as mSubscribe %}
 {% import 'macros/unread.njk' as mUnread %}
-{% import 'macros/guide.njk' as mGuide %}
+{# {% import 'macros/guide.njk' as mGuide %} #}
+{% import 'macros/welcome.njk' as mWelcome %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,6 +33,8 @@
     <link href="css/fonts.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/blog.css" rel="stylesheet">
+    <!-- Intro CSS -->
+    <link href="css/intro.min.css" rel="stylesheet">
     <!-- Custom styles for this tweak -->
     <link href="css/my.css" rel="stylesheet">
   </head>
@@ -60,7 +63,7 @@
         </header>
 
         <!-- Category line -->
-        <div class="nav-scroller pt-2 mb-2 border-bottom-light" >
+        <div class="nav-scroller pt-2 mb-2 border-bottom-light" data-intro="Navigate to different sections." data-step="1">
           <nav class="nav d-flex justify-content-between" id="category-section">
           {% for key, value in categories %}
           <a class="p-2 text-muted text-capitalize" href="#{{ key }}" id="menu-{{ key }}" onclick="jumpToAnchor(this)">{{ value["display"] }}</a>
@@ -95,8 +98,10 @@
     </div>
 
     <!-- Guide Modal -->
-    {{ mGuide.guideModal("guideModal", "guideCarousel", "guideCarouselNextButton") }}
-    
+    {# {{ mGuide.guideModal("guideModal", "guideCarousel", "guideCarouselNextButton") }} #}
+
+    {{mWelcome.welcomeModal("welcomeModal")}}
+
     <!-- Subscribe Modal -->
     {{ mSubscribe.subscribeModal("emailSubscribeModal", "userEmailInput", "emailSubmitButton", "emailLabel", "emailSentText", "formUserInput", "badMessage", "subscribeFooter") }}
     
@@ -127,7 +132,8 @@
         <h5>Features</h5>
         <ul class="list-unstyled text-small">
           <li><a class="text-muted" href="rss/">RSS Reader</a></li>
-          <li><a class="text-muted" href="" id="subscribe-email-link" style="pointer: cursor;">Email Newsletter</a></li>
+          <li><a class="text-muted" href="" id="subscribe-email-link">Email Newsletter</a></li>
+          <li><a class="text-muted" href="" id="user-guide-link">User Guide</a></li>
         </ul>
       </div>
       <div class="col-6 col-md">
@@ -150,6 +156,7 @@
     </footer>
   </body>
   <!-- Libraries -->
+  <script src="js/intro.min.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

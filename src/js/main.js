@@ -24,6 +24,8 @@ function calculateModalID(feedItem) {
     return 'modal-'+ calculateTarget(feedItem)
 }
 
+let guideOfBellCount = 0
+
 function markElementVisibility(idOfElement, visible = true) {
     const element = document.getElementById(idOfElement)
     if (!element) {
@@ -32,6 +34,15 @@ function markElementVisibility(idOfElement, visible = true) {
     }
     if (visible) {
         element.removeAttribute('hidden')
+        if (guideOfBellCount == 0){
+            element.parentElement.parentElement.parentElement.parentElement.setAttribute('data-intro', 'Card will lead to the news source.')
+            element.setAttribute('data-step', '3')
+
+            element.setAttribute('data-intro', 'Click the bell to see new updates.')
+            element.setAttribute('data-step', '4')
+
+            guideOfBellCount = 1
+        }
     } else {
         element.setAttribute('hidden', true)
     }
@@ -47,8 +58,6 @@ function showFeedModal(element){ // element = html element
     const modalID = String(element.id).replace('bell-', 'modal-')
     $('#' + modalID).modal('show')
 }
-
-
 
 // {bell_id: last_silent_UTC_time_in_milliseconds}
 function getSilentBells() {
@@ -239,39 +248,39 @@ $('#' + unreadButtonID).click(function (eventObject){
     }
 })
 
-const guideModalID = 'guideModal'
-const guideCarouselID = 'guideCarousel'
-const guideCarouselNextButtonID = 'guideCarouselNextButton'
+const welcomeModalID = 'welcomeModal'
 
-function syncGuideModalStatus() {
+function syncWelcomeStatus() {
     if (frontendStorageDB.getKey(PREFERENCE_STORAGE, "oldVisitor")){
         return;
     } else {
-        $('#' + guideModalID).modal('show')
+        $('html, body').stop().animate({ scrollTop: '+0' }, 600);
+        $('#' + welcomeModalID).modal('show')
         frontendStorageDB.setKey(PREFERENCE_STORAGE, "oldVisitor", true)
     }
 }
 
-$('#' + guideCarouselNextButtonID).click(function (){
-    $('#' + guideCarouselID).carousel('next')
+$('#' + 'user-guide-link').click(function(eventObject) {
+    eventObject.preventDefault();
+    $('html, body').stop().animate({ scrollTop: '+0' }, 600);
+    $('#' + welcomeModalID).modal('show')
 })
 
-// function triggerEmailSubscribeIfUserBrowseLongEnough() {
-//     setTimeout(function(){
-//         if (frontendStorageDB.getKey(PREFERENCE_STORAGE, "shownEmailBox")){
-//             return;
-//         } else {
-//             $('#emailSubscribeModal').modal('show')
-//             frontendStorageDB.setKey(PREFERENCE_STORAGE, "shownEmailBox", true)
-//         }
-//     }, 1000 * 60)
-// }
+const getStartedButtonID = 'getStartedButton'
+
+$('#' + getStartedButtonID).click(function(){
+    introJs()
+    .setOption("hidePrev", true)
+    .setOption("hideNext", true)
+    .setOption("showBullets", false)
+    .setOption("scrollToElement", true)
+    .setOption("exitOnOverlayClick", false)
+    .start(); 
+})
 
 $(document).ready(function(){
-
     run()
         .then(() => {console.log('init complete.');})
         .then(() => {syncUnreadButtonStatus(); console.log('sync unread button complete.'); })
-        // .then(() => {syncGuideModalStatus(); console.log('Guide is shown or hide.')})
-        // .then(() => { triggerEmailSubscribeIfUserBrowseLongEnough() })
+        .then(() => {syncWelcomeStatus(); console.log('Guide is shown or hide.')})
 })
