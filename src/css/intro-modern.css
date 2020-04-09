@@ -63,3 +63,15 @@
 .introjs-prevbutton:hover {
   border-width: 0;
 }
+
+.introjs-prevbutton {
+  display: none;
+}
+
+.introjs-skipbutton{
+  visibility: hidden !important;
+}
+
+.introjs-donebutton{
+  visibility: visible !important;
+}

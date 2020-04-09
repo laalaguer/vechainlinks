@@ -1,7 +1,7 @@
 {
     "categories": {
         "media": {
-            "display": "Media",
+            "display": "News",
             "description": "Official media accounts"
         },
         "websites": {
@@ -9,8 +9,8 @@
             "description": "Information hubs related to VeChain"
         },
         "people": {
-            "display": "People",
-            "description": "Other account to follow"
+            "display": "Social",
+            "description": "Other accounts to follow"
         },
         "tools": {
             "display": "Tools",
