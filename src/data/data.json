@@ -208,7 +208,8 @@
             "robot": "wordpress",
             "robot_params": [
                 "https",
-                "vechain101.com"
+                "vechain101.com",
+                [9]
             ],
             "run_by_vechain": false,
             "organization": true,
@@ -882,7 +883,8 @@
             "robot": "wordpress",
             "robot_params": [
                 "https",
-                "vechaininsider.com"
+                "vechaininsider.com",
+                []
             ],
             "run_by_vechain": false,
             "organization": true,
@@ -1647,7 +1649,7 @@
         {
             "url": "https://twitter.com/FreshSupplyCoAu",
             "category": "projects",
-            "platform": "Twitter",
+            "platform": "twitter",
             "robot": null,
             "robot_params": [],
             "run_by_vechain": false,
