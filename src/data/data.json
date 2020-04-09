@@ -545,25 +545,6 @@
             "job_status": "third_party"
         },
         {
-            "url": "https://twitter.com/d_inderias",
-            "category": "people",
-            "platform": "twitter",
-            "robot": "twitter",
-            "robot_params": [
-                "d_inderias"
-            ],
-            "run_by_vechain": false,
-            "organization": false,
-            "platform_identifier": "d_inderias",
-            "personal_account": true,
-            "editor_title": "David Inderias",
-            "editor_comments": "CEO of freshsupplyco.com",
-            "editor_languages": [
-                "english"
-            ],
-            "job_status": "third_party"
-        },
-        {
             "url": "https://twitter.com/VeChainStats",
             "category": "people",
             "platform": "twitter",
@@ -1664,9 +1645,9 @@
             "job_status": null
         },
         {
-            "url": "https://freshsupplyco.com",
+            "url": "https://twitter.com/FreshSupplyCoAu",
             "category": "projects",
-            "platform": "website",
+            "platform": "Twitter",
             "robot": null,
             "robot_params": [],
             "run_by_vechain": false,
