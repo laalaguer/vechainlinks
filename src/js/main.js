@@ -160,7 +160,7 @@ function buildFeedModal(groupKey, feedItems) {
     const modalTitle = '@' + feedItems[0].robotParams.join('/')
     const modal_html_part_1 = `
     <div id="modal-${groupKey}" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
      <div class="modal-content">
        <div class="modal-header">
          <h5 class="modal-title" id="exampleModalLongTitle">${modalTitle}</h5>
