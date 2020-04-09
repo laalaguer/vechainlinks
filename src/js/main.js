@@ -35,8 +35,9 @@ function markElementVisibility(idOfElement, visible = true) {
     if (visible) {
         element.removeAttribute('hidden')
         if (guideOfBellCount == 0){
-            element.parentElement.parentElement.parentElement.parentElement.setAttribute('data-intro', 'Tools? Projects? Tweets? You can track them all.')
-            element.setAttribute('data-step', '3')
+            element.parentElement.parentElement.parentElement.parentElement.setAttribute('data-intro', 'Tools? Projects? Tweets? You can track them all on cards.')
+            element.parentElement.parentElement.parentElement.parentElement.setAttribute('data-position', 'bottom')
+            element.parentElement.parentElement.parentElement.parentElement.setAttribute('data-step', '3')
 
             element.setAttribute('data-intro', 'Click the bell to see new updates.')
             element.setAttribute('data-step', '4')
@@ -216,7 +217,7 @@ async function run() {
 // filter out the cards on the webpage.
 function toggleUnreadButtonStatus(shouldUnread) {
     if (shouldUnread) { // should filter out unread
-        $('#' + unreadButtonID).removeClass('btn-outline-secondary').addClass('btn-info')
+        $('#' + unreadButtonID).removeClass('btn-outline-secondary').addClass('btn-warning')
         frontendStorageDB.setKey(PREFERENCE_STORAGE, "onlyUnread", true)
         $('.business-card')
             .filter(function(index, element) { // get those without bells.
@@ -228,7 +229,7 @@ function toggleUnreadButtonStatus(shouldUnread) {
                 }
             }).addClass('d-none')
     } else { // should not filter out any elements
-        $('#' + unreadButtonID).removeClass('btn-info').addClass('btn-outline-secondary')
+        $('#' + unreadButtonID).removeClass('btn-warning').addClass('btn-outline-secondary')
         frontendStorageDB.setKey(PREFERENCE_STORAGE, "onlyUnread", false)
         $('.business-card').removeClass('d-none')
     }
@@ -277,7 +278,7 @@ $('#' + getStartedButtonID).click(function(){
     .setOption("scrollToElement", true)
     .setOption("exitOnOverlayClick", false)
     .setOption("exitOnEsc", false)
-    .setOption("disableInteraction", true)
+    .setOption("tooltipClass", "bg-warning text-body")
     .oncomplete(function(){
         $('#' + welcomeDoneModalID).modal('show')
     })

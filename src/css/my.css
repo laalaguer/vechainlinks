@@ -9,7 +9,7 @@
 
 .border-bottom-thick {
     line-height: 1;
-    border-bottom: 2px solid #000000;
+    border-bottom: 3px solid #000000;
 }
 
 .border-bottom-light {
@@ -171,3 +171,14 @@
     position: fixed;
     z-index: 1000;
 } */
+
+.img-phone-rss {
+    max-width: 350px;
+}
+
+/* very small screens */
+@media (max-width: 768px) {
+    .img-phone-rss {
+        max-width: 300px;
+    }
+}

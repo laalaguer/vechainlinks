@@ -4,6 +4,7 @@
 {# {% import 'macros/guide.njk' as mGuide %} #}
 {% import 'macros/welcome.njk' as mWelcome %}
 {% import 'macros/welcomedone.njk' as mWelcomeDone %}
+{% import 'macros/top.njk' as mTop %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,6 +37,8 @@
     <link href="css/blog.css" rel="stylesheet">
     <!-- Intro CSS -->
     <link href="css/intro.min.css" rel="stylesheet">
+    <!-- Custom styles for Intro CSS -->
+    <link href="css/intro-modern.css" rel="stylesheet">
     <!-- Custom styles for this tweak -->
     <link href="css/my.css" rel="stylesheet">
   </head>
@@ -44,13 +47,13 @@
     <div class="container" id="my-body">
       <div id="sticky-header" class="sticky-top bg-white">
         <!-- Navbar -->
-        <header class="py-2 border-bottom-light" id="headline-container">
+        <header class="py-2 border-bottom-thick" id="headline-container">
           <div class="row flex-nowrap justify-content-between align-items-center">
             <!-- visible (md and above, occupies 4), (xs to sm, occupies 0) -->
             <div class="d-none d-sm-none d-md-block col-md-4 col-lg-4 pt-1">
             </div>
             <!-- visible (md and above, occupies 4), (xs to sm, occupies 10) -->
-            <div class="col-10 d-md-block col-md-4 col-lg-4 text-center">
+            <div class="col-8 d-md-block col-md-4 col-lg-4 text-center">
               <a class="blog-header-logo text-dark d-flex justify-content-center align-items-center" href="#" id="biggest-title">
                 <span class="mr-1 d-none d-sm-block d-md-block"><img src="img/vechainlinks.logo.only.png" id="biggest-logo" style="width:34px"></span>
                 <span class="ml-1">VeChain<span class="text-muted">Links</span></span>
@@ -67,7 +70,7 @@
         <div class="nav-scroller pt-2 mb-2 border-bottom-light" data-intro="Click to navigate to different sections." data-step="1">
           <nav class="nav d-flex justify-content-between" id="category-section">
           {% for key, value in categories %}
-          <a class="p-2 text-muted text-capitalize" href="#{{ key }}" id="menu-{{ key }}" onclick="jumpToAnchor(this)">{{ value["display"] }}</a>
+            <a class="p-2 text-dark text-capitalize" href="#{{ key }}" id="menu-{{ key }}" onclick="jumpToAnchor(this)">{{ value["display"] }}</a>
           {% endfor %}
           </nav>
         </div>
@@ -78,7 +81,7 @@
         <div class="col-md-8 px-0">
           <h1 class="display-4 text-black">Welcome to VeChain<span class="text-muted">Links</span>, one website to track 'em all</h1>
           <p class="lead my-3"></p>
-          <p class="lead mb-0"><a href="#" class="btn btn-lg btn-outline-secondary font-weight-bold" id="subscribe-big-button"><span class="mr-2">&#9993;</span>Get free newsletters</a></p>
+          <p class="lead mb-0"><a href="#" class="btn btn-lg btn-outline-secondary font-weight-light" id="subscribe-big-button"><span class="mr-2">&#9993;</span>Get free newsletters</a></p>
         </div>
       </div>
 
@@ -103,13 +106,13 @@
 
     {{mWelcome.welcomeModal("welcomeModal")}}
 
-    {{mWelcomeDone.modal("welcomeDoneModal")}}}}
+    {{mWelcomeDone.modal("welcomeDoneModal")}}
 
     <!-- Subscribe Modal -->
     {{ mSubscribe.subscribeModal("emailSubscribeModal", "userEmailInput", "emailSubmitButton", "emailLabel", "emailSentText", "formUserInput", "badMessage", "subscribeFooter") }}
     
     <!-- To Top Button -->
-    <button id="to-top-button" type="button" class="btn btn-secondary rounded-circle p-0 hover-button">&#8593;</button>
+    <button id="to-top-button" type="button" class="btn btn-secondary rounded-circle p-0 hover-button">{{mTop.arrow()}}</button>
     
     <!-- Navigator on the right -->
     <ul class="list-group hover-menu">

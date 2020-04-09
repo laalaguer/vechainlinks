@@ -1,17 +1,17 @@
 {% macro welcomeModal(modalID) %}
 <div class="modal fade" data-backdrop="static" id="{{modalID}}" tabindex="-1" role="dialog" aria-labelledby="{{modalID}}" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-body">
         <div class="container my-4">
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col-10 col-md-6 my-5">
-                    <h2>Hi There,</h2>
-                    <p><strong>VeChain<span class="text-muted">Links</span></strong><span class="font-weight-light"> brings you the daily VeChain updates from over 100+ channels!</span></p>
-                    <button class="btn btn-warning py-2" data-dismiss="modal" id="getStartedButton"><strong>Get Started</strong></button>
+                    <h2>Hi there,</h2>
+                    <p class="my-3"><span class="font-weight-light">We bring you updates from over 100+ VeChain channels everyday!</span></p>
+                    <button class="btn btn-warning py-3" data-dismiss="modal" id="getStartedButton"><strong>Get Started</strong></button>
                 </div>
-                <div class="col-10 col-md-4">
+                <div class="d-none d-sm-block col-10 col-md-4">
                     <img src="img/welcome.png" style="max-width: 240px;">
                 </div>
             </div>
