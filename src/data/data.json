@@ -1650,8 +1650,10 @@
             "url": "https://twitter.com/FreshSupplyCoAu",
             "category": "projects",
             "platform": "twitter",
-            "robot": null,
-            "robot_params": [],
+            "robot": "twitter",
+            "robot_params": [
+                "FreshSupplyCoAu"
+            ],
             "run_by_vechain": false,
             "organization": true,
             "platform_identifier": null,
