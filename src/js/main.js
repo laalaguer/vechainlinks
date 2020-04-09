@@ -35,12 +35,12 @@ function markElementVisibility(idOfElement, visible = true) {
     if (visible) {
         element.removeAttribute('hidden')
         if (guideOfBellCount == 0){
-            element.parentElement.parentElement.parentElement.parentElement.setAttribute('data-intro', 'Tools? Projects? Tweets? You can track them all on cards.')
+            element.parentElement.parentElement.parentElement.parentElement.setAttribute('data-intro', 'Card is the main place you see updates of Twitter, Reddit and more.')
             element.parentElement.parentElement.parentElement.parentElement.setAttribute('data-position', 'bottom')
-            element.parentElement.parentElement.parentElement.parentElement.setAttribute('data-step', '3')
+            element.parentElement.parentElement.parentElement.parentElement.setAttribute('data-step', '2')
 
             element.setAttribute('data-intro', 'Click the bell to see new updates.')
-            element.setAttribute('data-step', '4')
+            element.setAttribute('data-step', '3')
 
             guideOfBellCount = 1
         }
@@ -281,6 +281,11 @@ $('#' + getStartedButtonID).click(function(){
     .setOption("tooltipClass", "bg-warning text-body")
     .oncomplete(function(){
         $('#' + welcomeDoneModalID).modal('show')
+    })
+    .onbeforechange(function(targetElement) {
+        if (targetElement.id == "unreadButton") {
+            $('html, body').stop().animate({ scrollTop: '+0' }, 000);
+        }
     })
     .start(); 
 })
