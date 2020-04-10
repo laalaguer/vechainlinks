@@ -3,6 +3,7 @@ const PREFERENCE_STORAGE = 'PREFERENCE'
 const frontendStorageDB = new StorageDB()
 // Unread Button
 const unreadButtonID = 'unreadButton'
+const unreadButtonTextID = 'unreadButtonText'
 
 function getHashID(key) {
     return CryptoJS.SHA256(key).toString().slice(0,7)
@@ -49,15 +50,24 @@ function markElementVisibility(idOfElement, visible = true) {
     }
 }
 
-function showFeedModal(element){ // element = html element
-    const currentID = element.id
-    // grey the current element
-    greyIt(currentID)
-    // Set cookie, that bell-is-visited.
-    writeToSilentBells(currentID)
+// Show feed modal on an HTML element.
+function showFeedModal(element){ // element = html element, card
+    const targetURL = element.getAttribute('data-url')
+
+    // grey the bell element
+    const bellID = String(element.id).replace('card-', 'bell-')
+    greyIt(bellID)
+    // Set storage, that bell is visited.
+    writeToSilentBells(bellID)
+    
     // insert a dynamic modal. and bring up.
-    const modalID = String(element.id).replace('bell-', 'modal-')
-    $('#' + modalID).modal('show')
+    const modalID = String(element.id).replace('card-', 'modal-')
+    const target = $('#' + modalID)
+    if (target.length > 0) {
+        target.modal('show')
+    } else {
+        window.open(targetURL, "_blank")
+    }
 }
 
 // {bell_id: last_silent_UTC_time_in_milliseconds}
@@ -127,6 +137,8 @@ function colorIt(idOfElement) {
 }
 
 function buildFeedModal(groupKey, feedItems) {
+    let bigLink = undefined
+
     let elements = []
     for (let feed of feedItems) {
         const publishDate = feed.pubDate * 1000
@@ -138,25 +150,25 @@ function buildFeedModal(groupKey, feedItems) {
         } else {
             displayDateString = new Date(feed.pubDate*1000).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })
         }
-        // displayDateString = new Date(feed.pubDate*1000).toLocaleDateString('en-GB', {year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit'})
-        
+
         const truncatedTitle = feed.title.length > 120 ? feed.title.slice(0, 120) + ' ...' : feed.title
         const excerpt = truncatedTitle.length > 0 ? truncatedTitle : "[Media post, click to view]"
         
         elements.push(`
         <li class="list-group-item">
-          <a href="${feed.link}" target="_blank">${excerpt}</a>
-          
+          <a href="${feed.link}" target="_blank" class="text-info">${excerpt}</a>
           <div class="d-flex flex-row-reverse"><span class="text-muted">${displayDateString}</span></div>
         </li>`
         )
+
+        if (!bigLink) {
+            bigLink = feed.link
+        }
     }
 
-    elements = elements.slice(0, 6)
+    elements = elements.slice(0, 5)
 
     const modal_string_middle = elements.join('')
-
-    // console.log(modal_string_middle)
 
     const modalTitle = '@' + feedItems[0].robotParams.join('/')
     const modal_html_part_1 = `
@@ -175,13 +187,12 @@ function buildFeedModal(groupKey, feedItems) {
     const modal_string_part_2 = `
             </ul>
         </div>
+        <div class="card-footer bg-transparent text-center"><a href="${bigLink}">View more...</a></div>
        </div>
      </div>
    </div>`
 
     const modal_string = modal_html_part_1 + modal_string_middle + modal_string_part_2
-
-    // console.log(modal_string)
     const modal = $(modal_string)
 
     modal.appendTo($("html, body"))
@@ -217,7 +228,7 @@ async function run() {
 // filter out the cards on the webpage.
 function toggleUnreadButtonStatus(shouldUnread) {
     if (shouldUnread) { // should filter out unread
-        $('#' + unreadButtonID).removeClass('btn-outline-secondary').addClass('btn-warning')
+        $('#' + unreadButtonID).removeClass('btn-light').addClass('btn-warning')
         frontendStorageDB.setKey(PREFERENCE_STORAGE, "onlyUnread", true)
         $('.business-card')
             .filter(function(index, element) { // get those without bells.
@@ -229,7 +240,7 @@ function toggleUnreadButtonStatus(shouldUnread) {
                 }
             }).addClass('d-none')
     } else { // should not filter out any elements
-        $('#' + unreadButtonID).removeClass('btn-warning').addClass('btn-outline-secondary')
+        $('#' + unreadButtonID).removeClass('btn-warning').addClass('btn-light')
         frontendStorageDB.setKey(PREFERENCE_STORAGE, "onlyUnread", false)
         $('.business-card').removeClass('d-none')
     }

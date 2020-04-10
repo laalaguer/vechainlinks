@@ -27,8 +27,7 @@
     display: block;
     /*display: none;  hide display on naturally */
     width:50px;
-    height:50px; 
-    font-size: 32px;
+    height:50px;
     position: fixed; /* Fixed/sticky position */
     bottom: 30px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
@@ -139,8 +138,11 @@
     filter: grayscale(1); /* W3C */
 }
 
-.business-card {
-    /* marking purpose */
+.business-card:hover {
+}
+
+.business-card-content:hover {
+    cursor: pointer;
 }
 
 .introjs-helperLayer {

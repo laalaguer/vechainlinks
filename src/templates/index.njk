@@ -61,13 +61,13 @@
             </div>
             <!-- visible (md and above, occupies 4), (xs to sm, occupies 2) -->
             <div class="col-2 col-md-4 col-lg-4 d-flex justify-content-end align-items-center">
-              {{ mUnread.unreadButton("unreadButton", "btn-outline-secondary") }}
+              {{ mUnread.unreadButton("unreadButton", "btn-light", "unreadButtonText") }}
             </div>
           </div>
         </header>
 
         <!-- Category line -->
-        <div class="nav-scroller pt-2 mb-2 border-bottom-light" data-intro="Click to navigate to different sections." data-step="1">
+        <div class="nav-scroller pt-2 mb-2 border-bottom-light" data-intro="News? Projects? Github updates? Click to navigate." data-step="1">
           <nav class="nav d-flex justify-content-between" id="category-section">
           {% for key, value in categories %}
             <a class="p-2 text-dark text-capitalize" href="#{{ key }}" id="menu-{{ key }}" onclick="jumpToAnchor(this)">{{ value["display"] }}</a>
@@ -115,10 +115,10 @@
     <button id="to-top-button" type="button" class="btn btn-secondary rounded-circle p-0 hover-button">{{mTop.arrow()}}</button>
     
     <!-- Navigator on the right -->
-    <ul class="list-group hover-menu">
+    <ul class="list-group list-group-flush hover-menu">
       {% for key, value in categories %}
       <li class="list-group-item">
-        <a class="p-2 text-muted text-capitalize" href="#{{ key }}" id="menu-{{ key }}" onclick="jumpToAnchor(this)">{{ value["display"] }}</a>
+        <a class="p-2 text-body text-capitalize" href="#{{ key }}" id="menu-{{ key }}" onclick="jumpToAnchor(this)">{{ value["display"] }}</a>
       </li>
       {% endfor %}
     </ul>

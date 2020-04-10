@@ -1,12 +1,12 @@
 {% import 'macros/bell.njk' as mbell %}
 {% macro card(item, styleCol) %}
-<div class="{{styleCol}} business-card" id="card-{{ (makeString(item.robot) + item.robot_params.join('')) | getHashID }}">
-    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+<div class="{{styleCol}} business-card" id="card-{{ (makeString(item.robot) + item.robot_params.join('')) | getHashID }}" data-url="{{item.url}}" onclick="showFeedModal(this)">
+    <div class="business-card-content bg-light border-0 row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col-12 p-4 d-flex flex-column position-static">
             <div class="d-flex flex-row">
               <strong class="d-inline-block mb-2 text-capitalize mr-auto" style="color: {{item.platform | getBrandColor }}">{{item.platform}}</strong>
-              <div id="bell-{{ (makeString(item.robot) + item.robot_params.join('')) | getHashID }}" onclick="showFeedModal(this)"
-                style="cursor: pointer; z-index: 98"
+              <div id="bell-{{ (makeString(item.robot) + item.robot_params.join('')) | getHashID }}"
+                style="cursor: pointer;"
                 hidden
               >{{ mbell.bell(28) }}
               </div>
@@ -16,7 +16,6 @@
             <div class="mb-1 text-muted job-title">{{item.job_status | getJobStatusName }}</div>
             {%- endif %}
             <p class="card-text mb-auto font-weight-light" style="min-height:90px">{{item.editor_comments}}</p>
-            <a href="{{item.url}}" target="_blank" class="stretched-link">Continue reading</a>
         </div>
     </div>
 </div>
