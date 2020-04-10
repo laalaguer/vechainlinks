@@ -1,8 +1,17 @@
-# Vechain Links - Free updates and news of VeChain!
+# VeChainLinks - Automatic Updates and News of VeChain!
 
-Website: [https://vechainlinks.com](https://vechainlinks.com)
+<p align="center">
+<img src="src/img/vechainlinks.logo.with.text.png" width = "144px" height = "144px" align=center /> 
+</p>
 
-`VeChainLinks.com` a place where you find interesting people, project updates and news from big names in VeChain eco-system.
+
+
+[vechainlinks.com](https://vechainlinks.com) is a place where you find interesting people, project updates and news from big names in VeChain eco-system. Driven by the community and welcomes PR!
+
+## Client Interfaces
+- RSS
+- Email Subscription
+- Web
 
 ## How to Build & Test on Local Machine
 
@@ -58,7 +67,7 @@ Target #1:
 - Standardize the "social media" backend and output a single RSS API: {bot_type:, user_identifier:, newest:, previous_cache:}
 - Cache the RSS result, server fetch from source every X minutes.
 
-Analyze:
+Problem Solving:
 
 Reddit: [Atom-1.0]
 https://www.reddit.com/r/VeChain/.rss
@@ -82,8 +91,7 @@ https://github.com/vechain/thor/tags.atom
 https://github.com/vechain/thor/commits/master.atom
 https://github.com/vechain/thor/commits.atom
 
-We output feeds with Atom-1.0 style。
-
+We output feeds with RSS-2.0 style。
 
 Target #2:
 - A Dynamic frontend to display Feeds (excerpt)
@@ -94,15 +102,15 @@ Target #2:
 Result:
 - [x] A backend, to collect feeds on different platforms, and turning into RSS.
 - [x] A simple, dynamic website frontend, to poll RSS feed and display.
--  20 users to comment about the website.
+- [x] Get 20 users to comment about the website.
 - [x] Open for public members to contribute.
 
 ## Milestone #3: Subscribe and Analyze
 
 - [x] Google Analytics
 - [x] Email Subscribers
-- [] Get first 50 users on board.
-- [x] Email Centre
+- [x] Get first 50 users on board.
+- [x] Permanent Link Center.
 
 
 ### Honorable Mentions
@@ -112,4 +120,4 @@ Result:
 
 Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
-<p>User Guide Library<a href="https://introjs.com/">Intro.js</a><p>
+<p>User Guide Library <a href="https://introjs.com/">Intro.js</a><p>
