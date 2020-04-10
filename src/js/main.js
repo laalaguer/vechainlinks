@@ -188,7 +188,7 @@ function buildFeedModal(groupKey, feedItems) {
     const modal_string_part_2 = `
             </ul>
         </div>
-        <div class="card-footer bg-transparent text-center"><a href="${bigLink}" class="business-card-modal-footer">View more...</a></div>
+        <div class="card-footer bg-transparent text-center"><a href="${bigLink}" target="_blank" class="business-card-modal-footer">View more...</a></div>
        </div>
      </div>
    </div>`
