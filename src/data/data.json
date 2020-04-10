@@ -1648,7 +1648,7 @@
         },
         {
             "url": "https://twitter.com/FreshSupplyCoAu",
-            "category": "projects",
+            "category": "people",
             "platform": "twitter",
             "robot": "twitter",
             "robot_params": [
@@ -1656,7 +1656,7 @@
             ],
             "run_by_vechain": false,
             "organization": true,
-            "platform_identifier": null,
+            "platform_identifier": "FreshSupplyCoAu",
             "personal_account": false,
             "editor_title": "Fresh Supply Co.",
             "editor_comments": "Food Company that offers provenance/traceability for ag exports.",

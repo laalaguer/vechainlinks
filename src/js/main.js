@@ -64,6 +64,7 @@ function showFeedModal(element){ // element = html element, card
     const modalID = String(element.id).replace('card-', 'modal-')
     const target = $('#' + modalID)
     if (target.length > 0) {
+        target.find($(".business-card-modal-footer")).attr('href', targetURL)
         target.modal('show')
     } else {
         window.open(targetURL, "_blank")
@@ -187,7 +188,7 @@ function buildFeedModal(groupKey, feedItems) {
     const modal_string_part_2 = `
             </ul>
         </div>
-        <div class="card-footer bg-transparent text-center"><a href="${bigLink}">View more...</a></div>
+        <div class="card-footer bg-transparent text-center"><a href="${bigLink}" class="business-card-modal-footer">View more...</a></div>
        </div>
      </div>
    </div>`

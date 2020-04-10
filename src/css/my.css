@@ -138,6 +138,11 @@
     filter: grayscale(1); /* W3C */
 }
 
+.business-card-modal-footer {
+    
+}
+
+
 .business-card:hover {
 }
 
