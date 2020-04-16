@@ -1,7 +1,7 @@
 {% import 'macros/bell.njk' as mbell %}
 {% macro card(item, styleCol) %}
 <div class="{{styleCol}} business-card" id="card-{{ (makeString(item.robot) + item.robot_params.join('')) | getHashID }}" data-url="{{item.url}}" onclick="showFeedModal(this)">
-    <div class="business-card-content bg-light border-0 row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+    <div class="business-card-content bg-light border-0 row no-gutters border rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
         <div class="col-12 p-4 d-flex flex-column position-static">
             <div class="d-flex flex-row">
               <strong class="d-inline-block mb-2 text-capitalize mr-auto" style="color: {{item.platform | getBrandColor }}">{{item.platform}}</strong>
