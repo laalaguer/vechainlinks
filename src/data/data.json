@@ -1113,6 +1113,26 @@
             "job_status": null
         },
         {
+            "url": "https://github.com/vechain/thor-devkit.py",
+            "category": "code",
+            "platform": "github",
+            "robot": "githubrepo",
+            "robot_params": [
+                "vechain",
+                "thor-devkit.py"
+            ],
+            "run_by_vechain": true,
+            "organization": true,
+            "platform_identifier": null,
+            "personal_account": false,
+            "editor_title": "Thor Devkit (Python)",
+            "editor_comments": "Python SDK library. Wallets generation, transaction assembling.",
+            "editor_languages": [
+                "english"
+            ],
+            "job_status": null
+        },
+        {
             "url": "https://apps.apple.com/fi/app/vechainthor/id1397679485",
             "category": "tools",
             "platform": "mobile",
