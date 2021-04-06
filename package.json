@@ -1,7 +1,7 @@
 {
   "name": "vechainlinks",
   "version": "0.0.1",
-  "description": "`vechainlinks.com` is a place where you find interesting people, project updates and news from big names in VeChain eco-system.",
+  "description": "`vechainlinks.abyteahead.com` is a place where you find interesting people, project updates and news from big names in VeChain eco-system.",
   "main": "index.js",
   "dependencies": {
     "crypto-js": "^4.0.0",

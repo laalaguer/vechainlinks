@@ -1,1 +1,1 @@
-var API_ENDPOINT = 'https://vechainlinks.com/'
+var API_ENDPOINT = 'https://vechainlinks.abyteahead.com/'
